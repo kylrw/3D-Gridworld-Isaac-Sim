@@ -1,0 +1,4 @@
+[INFO] [1740901098.067454496] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1740901098.067532472] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1740901098.176293834] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1740901133.007912061] [rclcpp]: signal_handler(signum=2)

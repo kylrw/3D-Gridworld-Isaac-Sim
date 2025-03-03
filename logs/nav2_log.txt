@@ -1,0 +1,88 @@
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-02-25-18-49-33-070337-kyler-Vector-16-HX-A13VHG-83803
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [controller_server-1]: process started with pid [83895]
+[INFO] [smoother_server-2]: process started with pid [83897]
+[INFO] [planner_server-3]: process started with pid [83899]
+[INFO] [behavior_server-4]: process started with pid [83901]
+[INFO] [bt_navigator-5]: process started with pid [83903]
+[INFO] [waypoint_follower-6]: process started with pid [83905]
+[INFO] [velocity_smoother-7]: process started with pid [83907]
+[INFO] [lifecycle_manager-8]: process started with pid [83909]
+[planner_server-3] [INFO] [1740476973.529350224] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-4] [INFO] [1740476973.530947081] [behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
+[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1740476973.533270942] [controller_server]: 
+[controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1740476973.533292652] [waypoint_follower]: 
+[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1740476973.533299886] [smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
+[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1740476973.533707789] [waypoint_follower]: Creating
+[velocity_smoother-7] [INFO] [1740476973.535041682] [velocity_smoother]: 
+[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1740476973.535241325] [smoother_server]: Creating smoother server
+[planner_server-3] [INFO] [1740476973.537089280] [planner_server]: Creating
+[lifecycle_manager-8] [INFO] [1740476973.538121933] [lifecycle_manager_navigation]: Creating
+[bt_navigator-5] [INFO] [1740476973.538301594] [bt_navigator]: 
+[bt_navigator-5] 	bt_navigator lifecycle node launched. 
+[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1740476973.538396855] [bt_navigator]: Creating
+[lifecycle_manager-8] [INFO] [1740476973.539785948] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-1] [INFO] [1740476973.541036158] [controller_server]: Creating controller server
+[controller_server-1] [INFO] [1740476973.575876387] [local_costmap.local_costmap]: 
+[controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1740476973.576381304] [local_costmap.local_costmap]: Creating Costmap
+[planner_server-3] [INFO] [1740476973.579951506] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1740476973.580464253] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-1] [INFO] [1740476973.718291883] [controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1740476973.718974468] [controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1740476973.721972874] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [INFO] [1740476973.722027801] [local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1740476973.742982788] [local_costmap.local_costmap]: Using plugin "static_layer"
+[controller_server-1] [INFO] [1740476973.748878333] [local_costmap.local_costmap]: Subscribing to the map topic (/map) with transient local durability
+[controller_server-1] [INFO] [1740476973.752348985] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-1] [INFO] [1740476973.752382667] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[lifecycle_manager-8] [INFO] [1740476973.753866499] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-8] [INFO] [1740476973.753909524] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-1] [INFO] [1740476973.754164308] [local_costmap.local_costmap]: Subscribed to Topics: 
+[controller_server-1] [INFO] [1740476973.754226067] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-1] [INFO] [1740476973.754239530] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-1] [INFO] [1740476973.758608082] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-1] [INFO] [1740476973.775665164] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-1] [INFO] [1740476973.776903417] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-1] [INFO] [1740476973.777355521] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[controller_server-1] [INFO] [1740476973.779779709] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-1] [INFO] [1740476973.781491288] [controller_server]: Setting transform_tolerance to 0.100000
+[controller_server-1] [ERROR] [1740476973.789708836] [controller_server]: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[controller_server-1] [ERROR] [1740476973.793964923] [controller_server]: Caught exception in callback for transition 10
+[controller_server-1] [ERROR] [1740476973.794003054] [controller_server]: Original error: No critics defined for FollowPath
+[controller_server-1] [WARN] [1740476973.794028167] [controller_server]: Error occurred while doing error handling.
+[controller_server-1] [FATAL] [1740476973.794044316] [controller_server]: Lifecycle node controller_server does not have error state implemented
+[controller_server-1] [INFO] [1740476973.794171554] [controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1740476973.794192689] [controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1740476973.794211741] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [WARN] [1740476973.794233776] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[controller_server-1] [ERROR] [1740476973.794244223] [local_costmap.local_costmap]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[controller_server-1] terminate called after throwing an instance of 'std::runtime_error'
+[controller_server-1]   what():  Node '/local_costmap/local_costmap' has already been added to an executor.
+[ERROR] [controller_server-1]: process has died [pid 83895, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args --params-file /tmp/launch_params_cyka3tb7 -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)

@@ -1,0 +1,8 @@
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-02-16-15-17-681798-kyler-Vector-16-HX-A13VHG-101777
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [async_slam_toolbox_node-1]: process started with pid [101789]
+[async_slam_toolbox_node-1] [INFO] [1740899717.751885990] [slam_toolbox]: Node using stack size 40000000
+[async_slam_toolbox_node-1] [INFO] [1740899717.828748870] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-1] [INFO] [1740899717.828950009] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[async_slam_toolbox_node-1] [INFO] [1740899717.890716019] [slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 0.500 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
