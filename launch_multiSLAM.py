@@ -47,20 +47,21 @@ if __name__ == "__main__":
     isaac_sim = launch_isaac_sim()
     time.sleep(20)  # Wait for Isaac Sim to stabilize
 
-    print("Launching ROS 2 components for robot1 and robot2...")
-
-    # Start RViz (can be the same for both)
-    rviz_command = "ros2 run rviz2 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz --ros-args --remap use_sim_time:=True"
-    rviz_process = run_ros_command(rviz_command, "logs/rviz_log.txt")
+    print("Launching SLAM components ...")
 
     # Launch SLAM Toolbox for each robot
-    slam1_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot1 use_sim_time:=True "
-    slam2_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot2 use_sim_time:=True "
+    slam1_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot1 use_sim_time:=True"
+    slam2_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot2 use_sim_time:=True"
+    slam3_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot3 use_sim_time:=True"
     slam1_process = run_ros_command(slam1_command, "logs/slam1_log.txt")
     slam2_process = run_ros_command(slam2_command, "logs/slam2_log.txt")
+    slam3_process = run_ros_command(slam3_command, "logs/slam3_log.txt")
 
-    # # Launch Navigation for each robot
-    # TODO
+    print("Launching Nav components ...")
+
+    # Launch Navigation for each robot
+    nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
+    nav_process = run_ros_command(nav_command, "logs/nav_log.txt")
 
     print("Simulation is fully running! Ready to send navigation goals.")
 
@@ -72,9 +73,10 @@ if __name__ == "__main__":
             send_nav_goal(robot_id, x, y)
     except KeyboardInterrupt:
         print("Shutting down processes...")
-        rviz_process.terminate()
         slam1_process.terminate()
         slam2_process.terminate()
+        slam3_process.terminate()
+        nav_process.terminate()
 
 
         

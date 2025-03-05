@@ -1,8 +1,25 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-02-16-38-17-435427-kyler-Vector-16-HX-A13VHG-122317
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-05-18-06-23-610645-kyler-Vector-16-HX-A13VHG-91395
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [122337]
-[multirobot_slam_toolbox_node-1] [INFO] [1740901097.518246332] [robot1.slam_toolbox]: Node using stack size 40000000
-[multirobot_slam_toolbox_node-1] [INFO] [1740901097.591329742] [robot1.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[multirobot_slam_toolbox_node-1] [INFO] [1740901097.591681007] [robot1.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [91422]
+[multirobot_slam_toolbox_node-1] [INFO] [1741165583.700351187] [robot1.slam_toolbox]: Node using stack size 40000000
+[multirobot_slam_toolbox_node-1] [INFO] [1741165583.776330766] [robot1.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[multirobot_slam_toolbox_node-1] [INFO] [1741165583.777920614] [robot1.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot2]
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot3]
+[multirobot_slam_toolbox_node-1] [INFO] [1741165670.135475148] [robot1.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 90.217 for reason 'discarding message because the queue is full'
+[multirobot_slam_toolbox_node-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[multirobot_slam_toolbox_node-1] W0305 18:11:07.404448 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:07.591612 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:08.048545 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:18.581750 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:19.990975 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:22.975018 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:27.374668 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:33.935045 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:39.791200 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:40.554630 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:42.734090 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:42.777673 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:11:48.609761 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] W0305 18:12:06.190086 91422 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.

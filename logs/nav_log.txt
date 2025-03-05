@@ -1,226 +1,1325 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-02-16-15-19-692924-kyler-Vector-16-HX-A13VHG-101859
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-05-18-06-23-592932-kyler-Vector-16-HX-A13VHG-91398
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [controller_server-1]: process started with pid [101860]
-[INFO] [smoother_server-2]: process started with pid [101862]
-[INFO] [planner_server-3]: process started with pid [101864]
-[INFO] [behavior_server-4]: process started with pid [101866]
-[INFO] [bt_navigator-5]: process started with pid [101868]
-[INFO] [waypoint_follower-6]: process started with pid [101870]
-[INFO] [velocity_smoother-7]: process started with pid [101872]
-[INFO] [lifecycle_manager-8]: process started with pid [101874]
-[lifecycle_manager-8] [INFO] [1740899719.888328519] [lifecycle_manager_navigation]: Creating
-[waypoint_follower-6] [INFO] [1740899719.890845666] [waypoint_follower]: 
-[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
-[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
-[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[waypoint_follower-6] [INFO] [1740899719.891467046] [waypoint_follower]: Creating
-[lifecycle_manager-8] [INFO] [1740899719.897252622] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
-[planner_server-3] [INFO] [1740899719.898172757] [planner_server]: 
-[planner_server-3] 	planner_server lifecycle node launched. 
-[planner_server-3] 	Waiting on external lifecycle transitions to activate
-[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-3] [INFO] [1740899719.900993581] [planner_server]: Creating
-[controller_server-1] [INFO] [1740899719.901140851] [controller_server]: 
-[controller_server-1] 	controller_server lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
-[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[velocity_smoother-7] [INFO] [1740899719.903027903] [velocity_smoother]: 
-[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
-[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
-[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[smoother_server-2] [INFO] [1740899719.903336880] [smoother_server]: 
-[smoother_server-2] 	smoother_server lifecycle node launched. 
-[smoother_server-2] 	Waiting on external lifecycle transitions to activate
-[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[smoother_server-2] [INFO] [1740899719.906081988] [smoother_server]: Creating smoother server
-[controller_server-1] [INFO] [1740899719.908466741] [controller_server]: Creating controller server
-[bt_navigator-5] [INFO] [1740899719.914421429] [bt_navigator]: 
-[bt_navigator-5] 	bt_navigator lifecycle node launched. 
-[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
-[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[bt_navigator-5] [INFO] [1740899719.914564467] [bt_navigator]: Creating
-[behavior_server-4] [INFO] [1740899719.916525261] [behavior_server]: 
-[behavior_server-4] 	behavior_server lifecycle node launched. 
-[behavior_server-4] 	Waiting on external lifecycle transitions to activate
-[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-3] [INFO] [1740899719.920388629] [global_costmap.global_costmap]: 
-[planner_server-3] 	global_costmap lifecycle node launched. 
-[planner_server-3] 	Waiting on external lifecycle transitions to activate
-[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-3] [INFO] [1740899719.921136025] [global_costmap.global_costmap]: Creating Costmap
-[controller_server-1] [INFO] [1740899719.933120155] [local_costmap.local_costmap]: 
-[controller_server-1] 	local_costmap lifecycle node launched. 
-[controller_server-1] 	Waiting on external lifecycle transitions to activate
-[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[controller_server-1] [INFO] [1740899719.933702005] [local_costmap.local_costmap]: Creating Costmap
-[lifecycle_manager-8] [INFO] [1740899720.157734564] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
-[lifecycle_manager-8] [INFO] [1740899720.157787299] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
-[controller_server-1] [INFO] [1740899720.160052003] [controller_server]: Configuring controller interface
-[controller_server-1] [INFO] [1740899720.160219856] [controller_server]: getting goal checker plugins..
-[controller_server-1] [INFO] [1740899720.160337086] [controller_server]: Controller frequency set to 20.0000Hz
-[controller_server-1] [INFO] [1740899720.160378895] [local_costmap.local_costmap]: Configuring
-[controller_server-1] [INFO] [1740899720.164190281] [local_costmap.local_costmap]: Using plugin "voxel_layer"
-[controller_server-1] [INFO] [1740899720.166863142] [local_costmap.local_costmap]: Subscribed to Topics: scan
-[controller_server-1] [INFO] [1740899720.171103321] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
-[controller_server-1] [INFO] [1740899720.171127982] [local_costmap.local_costmap]: Using plugin "inflation_layer"
-[controller_server-1] [INFO] [1740899720.171527284] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
-[controller_server-1] [INFO] [1740899720.176023555] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
-[controller_server-1] [INFO] [1740899720.176583863] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
-[controller_server-1] [INFO] [1740899720.176748113] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
-[controller_server-1] [INFO] [1740899720.178589712] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
-[controller_server-1] [INFO] [1740899720.180614015] [controller_server]: Setting transform_tolerance to 0.200000
-[controller_server-1] [INFO] [1740899720.190111208] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
-[controller_server-1] [INFO] [1740899720.190488328] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.190583973] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
-[controller_server-1] [INFO] [1740899720.190922084] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.191013012] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
-[controller_server-1] [INFO] [1740899720.191132292] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.191207875] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
-[controller_server-1] [INFO] [1740899720.191475855] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.191586789] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
-[controller_server-1] [INFO] [1740899720.191724973] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.191767853] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
-[controller_server-1] [INFO] [1740899720.191861512] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.191908335] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
-[controller_server-1] [INFO] [1740899720.191999515] [controller_server]: Critic plugin initialized
-[controller_server-1] [INFO] [1740899720.192008290] [controller_server]: Controller Server has FollowPath  controllers available.
-[lifecycle_manager-8] [INFO] [1740899720.197160673] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
-[smoother_server-2] [INFO] [1740899720.197325458] [smoother_server]: Configuring smoother server
-[smoother_server-2] [INFO] [1740899720.209072051] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
-[smoother_server-2] [INFO] [1740899720.211052789] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
-[lifecycle_manager-8] [INFO] [1740899720.217358694] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
-[planner_server-3] [INFO] [1740899720.217551247] [planner_server]: Configuring
-[planner_server-3] [INFO] [1740899720.217595814] [global_costmap.global_costmap]: Configuring
-[planner_server-3] [INFO] [1740899720.221659111] [global_costmap.global_costmap]: Using plugin "static_layer"
-[planner_server-3] [INFO] [1740899720.224049418] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
-[planner_server-3] [INFO] [1740899720.225128172] [global_costmap.global_costmap]: Initialized plugin "static_layer"
-[planner_server-3] [INFO] [1740899720.225149449] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
-[planner_server-3] [INFO] [1740899720.225414241] [global_costmap.global_costmap]: Subscribed to Topics: scan
-[planner_server-3] [INFO] [1740899720.227838586] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
-[planner_server-3] [INFO] [1740899720.227859971] [global_costmap.global_costmap]: Using plugin "inflation_layer"
-[planner_server-3] [INFO] [1740899720.228943630] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
-[planner_server-3] [INFO] [1740899720.237438612] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
-[planner_server-3] [INFO] [1740899720.237472671] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
-[planner_server-3] [INFO] [1740899720.237854653] [planner_server]: Planner Server has GridBased  planners available.
-[lifecycle_manager-8] [INFO] [1740899720.965865997] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
-[behavior_server-4] [INFO] [1740899720.966708778] [behavior_server]: Configuring
-[behavior_server-4] [INFO] [1740899720.982352331] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
-[behavior_server-4] [INFO] [1740899720.982885859] [behavior_server]: Configuring spin
-[behavior_server-4] [INFO] [1740899720.986130229] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
-[behavior_server-4] [INFO] [1740899720.986954875] [behavior_server]: Configuring backup
-[behavior_server-4] [INFO] [1740899720.990238853] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
-[behavior_server-4] [INFO] [1740899720.991045952] [behavior_server]: Configuring drive_on_heading
-[behavior_server-4] [INFO] [1740899720.995319937] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
-[behavior_server-4] [INFO] [1740899720.996479996] [behavior_server]: Configuring assisted_teleop
-[behavior_server-4] [INFO] [1740899721.001334585] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
-[behavior_server-4] [INFO] [1740899721.002043842] [behavior_server]: Configuring wait
-[lifecycle_manager-8] [INFO] [1740899721.005098820] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
-[bt_navigator-5] [INFO] [1740899721.005279362] [bt_navigator]: Configuring
-[lifecycle_manager-8] [INFO] [1740899721.063342707] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
-[waypoint_follower-6] [INFO] [1740899721.063583340] [waypoint_follower]: Configuring
-[waypoint_follower-6] [INFO] [1740899721.078053881] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
-[lifecycle_manager-8] [INFO] [1740899721.078494632] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
-[velocity_smoother-7] [INFO] [1740899721.078646903] [velocity_smoother]: Configuring velocity smoother
-[lifecycle_manager-8] [INFO] [1740899721.080574397] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
-[controller_server-1] [INFO] [1740899721.080692497] [controller_server]: Activating
-[controller_server-1] [INFO] [1740899721.080739578] [local_costmap.local_costmap]: Activating
-[controller_server-1] [INFO] [1740899721.080757341] [local_costmap.local_costmap]: Checking transform
-[controller_server-1] [INFO] [1740899721.080852912] [local_costmap.local_costmap]: start
-[controller_server-1] [INFO] [1740899721.331517205] [controller_server]: Creating bond (controller_server) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899721.434851685] [lifecycle_manager_navigation]: Server controller_server connected with bond.
-[lifecycle_manager-8] [INFO] [1740899721.435421043] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
-[smoother_server-2] [INFO] [1740899721.435698642] [smoother_server]: Activating
-[smoother_server-2] [INFO] [1740899721.435739592] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899721.539633714] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
-[lifecycle_manager-8] [INFO] [1740899721.539671535] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
-[planner_server-3] [INFO] [1740899721.539951345] [planner_server]: Activating
-[planner_server-3] [INFO] [1740899721.540010474] [global_costmap.global_costmap]: Activating
-[planner_server-3] [INFO] [1740899721.540030589] [global_costmap.global_costmap]: Checking transform
-[planner_server-3] [INFO] [1740899721.540162562] [global_costmap.global_costmap]: start
-[planner_server-3] [WARN] [1740899722.540603930] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
-[planner_server-3] [WARN] [1740899722.540664175] [global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.98, 4.98). The costmap cannot raytrace for it.
-[planner_server-3] [INFO] [1740899722.590905854] [planner_server]: Activating plugin GridBased of type NavfnPlanner
-[planner_server-3] [INFO] [1740899722.593032926] [planner_server]: Creating bond (planner_server) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899722.699974656] [lifecycle_manager_navigation]: Server planner_server connected with bond.
-[lifecycle_manager-8] [INFO] [1740899722.700020293] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
-[behavior_server-4] [INFO] [1740899722.700346372] [behavior_server]: Activating
-[behavior_server-4] [INFO] [1740899722.700377395] [behavior_server]: Activating spin
-[behavior_server-4] [INFO] [1740899722.700391468] [behavior_server]: Activating backup
-[behavior_server-4] [INFO] [1740899722.700402213] [behavior_server]: Activating drive_on_heading
-[behavior_server-4] [INFO] [1740899722.700412926] [behavior_server]: Activating assisted_teleop
-[behavior_server-4] [INFO] [1740899722.700423137] [behavior_server]: Activating wait
-[behavior_server-4] [INFO] [1740899722.700437529] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899722.803411587] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
-[lifecycle_manager-8] [INFO] [1740899722.803444035] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
-[bt_navigator-5] [INFO] [1740899722.803635837] [bt_navigator]: Activating
-[planner_server-3] [INFO] [1740899722.834352180] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 176 X 162 at 0.050000 m/pix
-[bt_navigator-5] [INFO] [1740899722.849132525] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899722.956772980] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
-[lifecycle_manager-8] [INFO] [1740899722.956812210] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
-[waypoint_follower-6] [INFO] [1740899722.957144098] [waypoint_follower]: Activating
-[waypoint_follower-6] [INFO] [1740899722.957188345] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899723.060342823] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
-[lifecycle_manager-8] [INFO] [1740899723.060874341] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
-[velocity_smoother-7] [INFO] [1740899723.061115798] [velocity_smoother]: Activating
-[velocity_smoother-7] [INFO] [1740899723.061180983] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
-[lifecycle_manager-8] [INFO] [1740899723.164748608] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
-[lifecycle_manager-8] [INFO] [1740899723.164787960] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
-[lifecycle_manager-8] [INFO] [1740899723.164801530] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
-[bt_navigator-5] [INFO] [1740899733.029985232] [bt_navigator]: Begin navigating from current location (-0.00, 0.00) to (3.00, 3.00)
-[controller_server-1] [INFO] [1740899733.050607375] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-1] [WARN] [1740899733.050664089] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
-[controller_server-1] [INFO] [1740899734.100910648] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899735.150939578] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899736.150913361] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899737.200949700] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899738.200913599] [controller_server]: Passing new path to controller.
-[planner_server-3] [INFO] [1740899738.540795273] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 177 X 162 at 0.050000 m/pix
-[controller_server-1] [INFO] [1740899739.250938669] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899740.254956137] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899741.300950930] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899742.350911471] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899743.350911697] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899744.350921117] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899745.400913010] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899746.450922356] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899747.450923144] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899748.500910380] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899749.500917194] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899750.550919777] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899751.551751578] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899752.600910348] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899753.652958564] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899754.153895561] [controller_server]: Reached the goal!
-[bt_navigator-5] [INFO] [1740899754.190570097] [bt_navigator]: Goal succeeded
-[bt_navigator-5] [INFO] [1740899756.422258812] [bt_navigator]: Begin navigating from current location (2.86, 2.82) to (-3.29, 3.96)
-[controller_server-1] [INFO] [1740899756.442983531] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-1] [INFO] [1740899757.494324636] [controller_server]: Passing new path to controller.
-[planner_server-3] [INFO] [1740899758.540534193] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 186 X 171 at 0.050000 m/pix
-[controller_server-1] [INFO] [1740899758.543211026] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899759.543213419] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899760.593214950] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899761.593347316] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899762.647276281] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899763.693212579] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899764.693215146] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899765.743218939] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899766.745124045] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899767.793213921] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899768.846048532] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899769.844856884] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899770.893222815] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899771.893210817] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899772.943212517] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899773.993282317] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899774.993211880] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899776.043876492] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899777.043209302] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899778.093395325] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899779.143783064] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899780.143214504] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899781.193341806] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899782.193207452] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899783.246316349] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899784.243556405] [controller_server]: Passing new path to controller.
-[controller_server-1] [INFO] [1740899784.797391143] [controller_server]: Reached the goal!
-[bt_navigator-5] [INFO] [1740899784.832483040] [bt_navigator]: Goal succeeded
+[INFO] [launch.user]: Launching robot1
+[INFO] [launch.user]: robot1 map yaml: robot1/map
+[INFO] [launch.user]: robot1 params yaml: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/params/nav2_multirobot_params_1.yaml
+[INFO] [launch.user]: robot1 behavior tree xml: /opt/ros/humble/share/nav2_bt_navigator/behavior_trees/navigate_w_replanning_and_recovery.xml
+[INFO] [launch.user]: robot1 rviz config file: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/rviz2/carter_navigation_namespaced.rviz
+[INFO] [launch.user]: robot1 autostart: True
+[INFO] [launch.user]: Launching robot2
+[INFO] [launch.user]: robot2 map yaml: robot2/map
+[INFO] [launch.user]: robot2 params yaml: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/params/nav2_multirobot_params_2.yaml
+[INFO] [launch.user]: robot2 behavior tree xml: /opt/ros/humble/share/nav2_bt_navigator/behavior_trees/navigate_w_replanning_and_recovery.xml
+[INFO] [launch.user]: robot2 rviz config file: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/rviz2/carter_navigation_namespaced.rviz
+[INFO] [launch.user]: robot2 autostart: True
+[INFO] [launch.user]: Launching robot3
+[INFO] [launch.user]: robot3 map yaml: robot3/map
+[INFO] [launch.user]: robot3 params yaml: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/params/nav2_multirobot_params_3.yaml
+[INFO] [launch.user]: robot3 behavior tree xml: /opt/ros/humble/share/nav2_bt_navigator/behavior_trees/navigate_w_replanning_and_recovery.xml
+[INFO] [launch.user]: robot3 rviz config file: /home/kyler/ros2_ws/install/turtle_navigation/share/turtle_navigation/rviz2/carter_navigation_namespaced.rviz
+[INFO] [launch.user]: robot3 autostart: True
+[INFO] [rviz2-1]: process started with pid [91674]
+[INFO] [component_container_isolated-2]: process started with pid [91676]
+[INFO] [rviz2-3]: process started with pid [91678]
+[INFO] [component_container_isolated-4]: process started with pid [91680]
+[INFO] [rviz2-5]: process started with pid [91682]
+[INFO] [component_container_isolated-6]: process started with pid [91684]
+[rviz2-3] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[rviz2-5] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[rviz2-1] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[component_container_isolated-4] [INFO] [1741165584.788375899] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-4] [INFO] [1741165584.795662509] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-4] [INFO] [1741165584.795696684] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-4] [INFO] [1741165584.795701691] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-4] [INFO] [1741165584.795705245] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-4] [INFO] [1741165584.801434821] [robot2.map_server]: 
+[component_container_isolated-4] 	map_server lifecycle node launched. 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/map_server' in container 'robot2/nav2_container'
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.801466186] [robot2.map_server]: Creating
+[component_container_isolated-4] [INFO] [1741165584.803880570] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-4] [INFO] [1741165584.805520657] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-4] [INFO] [1741165584.805544004] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-4] [INFO] [1741165584.813962500] [robot2.amcl]: 
+[component_container_isolated-4] 	amcl lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.814529637] [robot2.amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/amcl' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165584.816948510] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-4] [INFO] [1741165584.817275331] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-4] [INFO] [1741165584.817287491] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-4] [INFO] [1741165584.821204205] [robot2.lifecycle_manager_localization]: Creating
+[component_container_isolated-4] [INFO] [1741165584.822995219] [robot2.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/lifecycle_manager_localization' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165584.824485571] [robot2.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-4] [INFO] [1741165584.824518864] [robot2.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165584.824647509] [robot2.map_server]: Configuring
+[component_container_isolated-4] [INFO] [1741165584.824701945] [map_io]: Loading yaml file: robot2/map
+[component_container_isolated-4] [ERROR] [1741165584.824762569] [map_io]: Failed processing YAML file robot2/map at position (-1:-1) for reason: bad file: robot2/map
+[component_container_isolated-4] [ERROR] [1741165584.824793601] [robot2.map_server]: Caught exception in callback for transition 10
+[component_container_isolated-4] [ERROR] [1741165584.824803848] [robot2.map_server]: Original error: Failed to load map yaml file: robot2/map
+[component_container_isolated-4] [WARN] [1741165584.824818862] [robot2.map_server]: Error occurred while doing error handling.
+[component_container_isolated-4] [FATAL] [1741165584.824829711] [robot2.map_server]: Lifecycle node map_server does not have error state implemented
+[component_container_isolated-4] [ERROR] [1741165584.824954250] [robot2.lifecycle_manager_localization]: Failed to change state for node: map_server
+[component_container_isolated-4] [ERROR] [1741165584.824965542] [robot2.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[component_container_isolated-6] [INFO] [1741165584.833927245] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-6] [INFO] [1741165584.842734473] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-6] [INFO] [1741165584.842761734] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-6] [INFO] [1741165584.842764660] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-6] [INFO] [1741165584.842767036] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-6] [INFO] [1741165584.847595175] [robot3.map_server]: 
+[component_container_isolated-6] 	map_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165584.847632161] [robot3.map_server]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/map_server' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165584.851988911] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-6] [INFO] [1741165584.853576783] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-6] [INFO] [1741165584.853588396] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-6] [INFO] [1741165584.860098594] [robot3.amcl]: 
+[component_container_isolated-6] 	amcl lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165584.860661340] [robot3.amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/amcl' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165584.862790534] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-6] [INFO] [1741165584.863111697] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1741165584.863120007] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1741165584.869521892] [robot3.lifecycle_manager_localization]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/lifecycle_manager_localization' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165584.870717942] [robot3.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-6] [INFO] [1741165584.872365458] [robot3.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-6] [INFO] [1741165584.872397665] [robot3.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165584.872508887] [robot3.map_server]: Configuring
+[component_container_isolated-6] [INFO] [1741165584.872545444] [map_io]: Loading yaml file: robot3/map
+[component_container_isolated-6] [ERROR] [1741165584.872580201] [map_io]: Failed processing YAML file robot3/map at position (-1:-1) for reason: bad file: robot3/map
+[component_container_isolated-6] [ERROR] [1741165584.872594869] [robot3.map_server]: Caught exception in callback for transition 10
+[component_container_isolated-6] [ERROR] [1741165584.872598689] [robot3.map_server]: Original error: Failed to load map yaml file: robot3/map
+[component_container_isolated-6] [WARN] [1741165584.872604625] [robot3.map_server]: Error occurred while doing error handling.
+[component_container_isolated-6] [FATAL] [1741165584.872609656] [robot3.map_server]: Lifecycle node map_server does not have error state implemented
+[component_container_isolated-6] [ERROR] [1741165584.872700752] [robot3.lifecycle_manager_localization]: Failed to change state for node: map_server
+[component_container_isolated-6] [ERROR] [1741165584.872713387] [robot3.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[component_container_isolated-2] [INFO] [1741165584.893106588] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-2] [INFO] [1741165584.898393932] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-2] [INFO] [1741165584.898429472] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-2] [INFO] [1741165584.906016928] [robot1.controller_server]: 
+[component_container_isolated-2] 	controller_server lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.913470697] [robot1.controller_server]: Creating controller server
+[component_container_isolated-2] [INFO] [1741165584.918129499] [robot1.local_costmap.local_costmap]: 
+[component_container_isolated-2] 	local_costmap lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.918508068] [robot1.local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/controller_server' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165584.920189259] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-2] [INFO] [1741165584.921022149] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-2] [INFO] [1741165584.921034480] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-2] [INFO] [1741165584.931646168] [robot1.smoother_server]: 
+[component_container_isolated-2] 	smoother_server lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.932760836] [robot1.smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/smoother_server' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165584.934289077] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-2] [INFO] [1741165584.934710202] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-2] [INFO] [1741165584.934717866] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-4] [INFO] [1741165584.938050535] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-4] [INFO] [1741165584.939628374] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-4] [INFO] [1741165584.939653886] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-2] [INFO] [1741165584.939804871] [robot1.planner_server]: 
+[component_container_isolated-2] 	planner_server lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.941461742] [robot1.planner_server]: Creating
+[component_container_isolated-4] [INFO] [1741165584.947037653] [robot2.controller_server]: 
+[component_container_isolated-4] 	controller_server lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.950153559] [robot1.global_costmap.global_costmap]: 
+[component_container_isolated-2] 	global_costmap lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.950673215] [robot1.global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/planner_server' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165584.953100707] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-4] [INFO] [1741165584.953690108] [robot2.controller_server]: Creating controller server
+[component_container_isolated-2] [INFO] [1741165584.955693260] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-2] [INFO] [1741165584.955714779] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-4] [INFO] [1741165584.961406607] [robot2.local_costmap.local_costmap]: 
+[component_container_isolated-4] 	local_costmap lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.962063589] [robot2.local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/controller_server' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165584.964738693] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-2] [INFO] [1741165584.965111535] [robot1.behavior_server]: 
+[component_container_isolated-2] 	behavior_server lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.965844918] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-4] [INFO] [1741165584.965862579] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/behavior_server' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165584.971148088] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-2] [INFO] [1741165584.972480185] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-2] [INFO] [1741165584.972502322] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-4] [INFO] [1741165584.974776016] [robot2.smoother_server]: 
+[component_container_isolated-4] 	smoother_server lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.976911547] [robot2.smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/smoother_server' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165584.978577068] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-4] [INFO] [1741165584.978993258] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-4] [INFO] [1741165584.979002635] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-2] [INFO] [1741165584.982324682] [robot1.bt_navigator]: 
+[component_container_isolated-2] 	bt_navigator lifecycle node launched. 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/bt_navigator' in container 'robot1/nav2_container'
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165584.982400174] [robot1.bt_navigator]: Creating
+[component_container_isolated-2] [INFO] [1741165584.982901111] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-6] [INFO] [1741165584.982995051] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-6] [INFO] [1741165584.984649136] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-6] [INFO] [1741165584.984671091] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-4] [INFO] [1741165584.986415079] [robot2.planner_server]: 
+[component_container_isolated-4] 	planner_server lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165584.988555621] [robot2.planner_server]: Creating
+[component_container_isolated-2] [INFO] [1741165584.991604512] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-2] [INFO] [1741165584.991637037] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-2] [INFO] [1741165584.991645933] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-2] [INFO] [1741165584.991652916] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-6] [INFO] [1741165584.993765240] [robot3.controller_server]: 
+[component_container_isolated-6] 	controller_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165584.997911616] [robot3.controller_server]: Creating controller server
+[component_container_isolated-4] [INFO] [1741165584.999839193] [robot2.global_costmap.global_costmap]: 
+[component_container_isolated-4] 	global_costmap lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165585.000413974] [robot2.global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/planner_server' in container 'robot2/nav2_container'
+[component_container_isolated-2] [INFO] [1741165585.002587697] [robot1.map_server]: 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/map_server' in container 'robot1/nav2_container'
+[component_container_isolated-2] 	map_server lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.002618644] [robot1.map_server]: Creating
+[component_container_isolated-2] [INFO] [1741165585.002938024] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-2] [INFO] [1741165585.003372364] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-2] [INFO] [1741165585.003383940] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-4] [INFO] [1741165585.003143787] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-6] [INFO] [1741165585.005356827] [robot3.local_costmap.local_costmap]: 
+[component_container_isolated-6] 	local_costmap lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165585.005896351] [robot3.local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-4] [INFO] [1741165585.006094095] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-4] [INFO] [1741165585.006122267] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/controller_server' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.009244621] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-6] [INFO] [1741165585.010507563] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-6] [INFO] [1741165585.010529196] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-2] [INFO] [1741165585.017481938] [robot1.waypoint_follower]: 
+[component_container_isolated-2] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.017871601] [robot1.waypoint_follower]: Creating
+[component_container_isolated-2] [INFO] [1741165585.018280855] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/waypoint_follower' in container 'robot1/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.018492759] [robot2.behavior_server]: 
+[component_container_isolated-4] 	behavior_server lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.019390680] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-2] [INFO] [1741165585.019404017] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-6] [INFO] [1741165585.020377890] [robot3.smoother_server]: 
+[component_container_isolated-6] 	smoother_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/behavior_server' in container 'robot2/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.021599840] [robot3.smoother_server]: Creating smoother server
+[component_container_isolated-4] [INFO] [1741165585.021967127] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/smoother_server' in container 'robot3/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.022868297] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-4] [INFO] [1741165585.022879914] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-6] [INFO] [1741165585.024105003] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-6] [INFO] [1741165585.024885152] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-6] [INFO] [1741165585.024905372] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-2] [INFO] [1741165585.031019204] [robot1.amcl]: 
+[component_container_isolated-2] 	amcl lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.031369072] [robot1.amcl]: Creating
+[component_container_isolated-6] [INFO] [1741165585.034671174] [robot3.planner_server]: 
+[component_container_isolated-6] 	planner_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165585.035919346] [robot2.bt_navigator]: 
+[component_container_isolated-4] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165585.035961326] [robot2.bt_navigator]: Creating
+[component_container_isolated-6] [INFO] [1741165585.037160835] [robot3.planner_server]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/bt_navigator' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.038537694] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-4] [INFO] [1741165585.038938701] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-4] [INFO] [1741165585.038946949] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-2] [INFO] [1741165585.039341132] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/amcl' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165585.039802632] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-2] [INFO] [1741165585.039813822] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-6] [INFO] [1741165585.045420683] [robot3.global_costmap.global_costmap]: 
+[component_container_isolated-6] 	global_costmap lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165585.046017242] [robot3.global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/planner_server' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.049025971] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-4] [INFO] [1741165585.050361599] [robot2.waypoint_follower]: 
+[component_container_isolated-4] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-4] [INFO] [1741165585.050925916] [robot2.waypoint_follower]: Creating
+[component_container_isolated-6] [INFO] [1741165585.051730024] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/waypoint_follower' in container 'robot2/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.051756677] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/velocity_smoother' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165585.052055995] [robot1.velocity_smoother]: 
+[component_container_isolated-2] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-2] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.052236928] [robot1.nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-2] [INFO] [1741165585.052577913] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-2] [INFO] [1741165585.052586345] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-4] [INFO] [1741165585.060693102] [robot2.nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-4] [INFO] [1741165585.061185817] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-4] [INFO] [1741165585.061205070] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-2] [INFO] [1741165585.061389934] [robot1.lifecycle_manager_localization]: Creating
+[component_container_isolated-2] [INFO] [1741165585.064238615] [robot1.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/lifecycle_manager_localization' in container 'robot1/nav2_container'
+[component_container_isolated-2] [INFO] [1741165585.064370712] [robot1.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-2] [INFO] [1741165585.064391117] [robot1.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1741165585.068752441] [robot3.behavior_server]: 
+[component_container_isolated-6] 	behavior_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.070104494] [robot1.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.070149223] [robot1.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.070402919] [robot1.map_server]: Configuring
+[component_container_isolated-2] [INFO] [1741165585.070466306] [map_io]: Loading yaml file: robot1/map
+[component_container_isolated-2] [ERROR] [1741165585.070534917] [map_io]: Failed processing YAML file robot1/map at position (-1:-1) for reason: bad file: robot1/map
+[component_container_isolated-2] [ERROR] [1741165585.070567966] [robot1.map_server]: Caught exception in callback for transition 10
+[component_container_isolated-2] [ERROR] [1741165585.070579468] [robot1.map_server]: Original error: Failed to load map yaml file: robot1/map
+[component_container_isolated-2] [WARN] [1741165585.070597501] [robot1.map_server]: Error occurred while doing error handling.
+[component_container_isolated-2] [FATAL] [1741165585.070610208] [robot1.map_server]: Lifecycle node map_server does not have error state implemented
+[component_container_isolated-2] [ERROR] [1741165585.070924652] [robot1.lifecycle_manager_localization]: Failed to change state for node: map_server
+[component_container_isolated-2] [ERROR] [1741165585.070944086] [robot1.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[component_container_isolated-4] [INFO] [1741165585.070864073] [robot2.velocity_smoother]: 
+[component_container_isolated-4] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-4] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/behavior_server' in container 'robot3/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/velocity_smoother' in container 'robot2/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.073653500] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-4] [INFO] [1741165585.073871008] [robot2.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-4] [INFO] [1741165585.073895469] [robot2.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1741165585.074634804] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-6] [INFO] [1741165585.074651417] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-2] [INFO] [1741165585.081671111] [robot1.lifecycle_manager_navigation]: Creating
+[component_container_isolated-2] [INFO] [1741165585.085345163] [robot1.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot1/lifecycle_manager_navigation' in container 'robot1/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.085441479] [robot2.lifecycle_manager_navigation]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot2/lifecycle_manager_navigation' in container 'robot2/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.087447906] [robot2.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.088719439] [robot3.bt_navigator]: 
+[component_container_isolated-6] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1741165585.088776337] [robot3.bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/bt_navigator' in container 'robot3/nav2_container'
+[component_container_isolated-6] [INFO] [1741165585.095710413] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-6] [INFO] [1741165585.096529513] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-6] [INFO] [1741165585.096543770] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-2] [INFO] [1741165585.098269087] [robot1.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.098312534] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.098431134] [robot1.controller_server]: Configuring controller interface
+[component_container_isolated-2] [INFO] [1741165585.099259461] [robot1.controller_server]: getting goal checker plugins..
+[component_container_isolated-2] [INFO] [1741165585.100065665] [robot1.controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-2] [INFO] [1741165585.100095873] [robot1.local_costmap.local_costmap]: Configuring
+[component_container_isolated-2] [INFO] [1741165585.105172873] [robot1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-2] [INFO] [1741165585.107904962] [robot1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-4] [INFO] [1741165585.111646653] [robot2.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.111681841] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.111842667] [robot2.controller_server]: Configuring controller interface
+[component_container_isolated-4] [INFO] [1741165585.112174904] [robot2.controller_server]: getting goal checker plugins..
+[component_container_isolated-4] [INFO] [1741165585.112375838] [robot2.controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-4] [INFO] [1741165585.112409567] [robot2.local_costmap.local_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.114538731] [robot3.waypoint_follower]: 
+[component_container_isolated-6] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.114815779] [robot1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-2] [INFO] [1741165585.114841492] [robot1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1741165585.114975361] [robot3.waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/waypoint_follower' in container 'robot3/nav2_container'
+[component_container_isolated-2] [INFO] [1741165585.115722938] [robot1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1741165585.117027816] [robot3.nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-4] [INFO] [1741165585.117310028] [robot2.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-6] [INFO] [1741165585.117473990] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-6] [INFO] [1741165585.117483603] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-4] [INFO] [1741165585.120841684] [robot2.local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-4] [INFO] [1741165585.130210633] [robot2.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-4] [INFO] [1741165585.130235510] [robot2.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-4] [INFO] [1741165585.131132500] [robot2.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-2] [INFO] [1741165585.131330107] [robot1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-2] [INFO] [1741165585.132073296] [robot1.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-2] [INFO] [1741165585.132371906] [robot1.controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-6] [INFO] [1741165585.133858711] [robot3.velocity_smoother]: 
+[component_container_isolated-6] 	velocity_smoother lifecycle node launched. 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/velocity_smoother' in container 'robot3/nav2_container'
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-2] [INFO] [1741165585.134412121] [robot1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-2] [INFO] [1741165585.135713310] [robot1.controller_server]: Setting transform_tolerance to 0.200000
+[component_container_isolated-6] [INFO] [1741165585.135983886] [robot3.nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1741165585.136010931] [robot3.nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-4] [INFO] [1741165585.138749020] [robot2.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-4] [INFO] [1741165585.139746391] [robot2.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-4] [INFO] [1741165585.140426544] [robot2.controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-4] [INFO] [1741165585.142639847] [robot2.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-4] [INFO] [1741165585.144161710] [robot2.controller_server]: Setting transform_tolerance to 0.200000
+[component_container_isolated-2] [INFO] [1741165585.145675831] [robot1.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-2] [INFO] [1741165585.147004154] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.147455233] [robot1.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-2] [INFO] [1741165585.149835574] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.149984327] [robot1.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-2] [INFO] [1741165585.150393103] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.150560713] [robot1.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-6] [INFO] [1741165585.150657406] [robot3.lifecycle_manager_navigation]: Creating
+[component_container_isolated-2] [INFO] [1741165585.151007074] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.151194490] [robot1.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-2] [INFO] [1741165585.151522573] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.151628195] [robot1.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-2] [INFO] [1741165585.151890794] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.152018233] [robot1.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-2] [INFO] [1741165585.152237762] [robot1.controller_server]: Critic plugin initialized
+[component_container_isolated-2] [INFO] [1741165585.152258749] [robot1.controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-6] [INFO] [1741165585.153064442] [robot3.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/robot3/lifecycle_manager_navigation' in container 'robot3/nav2_container'
+[component_container_isolated-4] [INFO] [1741165585.158049994] [robot2.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-4] [INFO] [1741165585.158451995] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.158583789] [robot2.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-4] [INFO] [1741165585.159106527] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.159204273] [robot2.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-4] [INFO] [1741165585.159346623] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.159418918] [robot2.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-4] [INFO] [1741165585.159722991] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.159794518] [robot2.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-4] [INFO] [1741165585.160100107] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.160249366] [robot2.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-4] [INFO] [1741165585.160501293] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.160645436] [robot2.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-4] [INFO] [1741165585.160881399] [robot2.controller_server]: Critic plugin initialized
+[component_container_isolated-4] [INFO] [1741165585.160897147] [robot2.controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-2] [INFO] [1741165585.160897266] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.161074340] [robot1.smoother_server]: Configuring smoother server
+[component_container_isolated-2] [INFO] [1741165585.167121973] [robot1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-2] [INFO] [1741165585.167679205] [robot1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-6] [INFO] [1741165585.169155781] [robot3.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.169169338] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.169408659] [robot2.smoother_server]: Configuring smoother server
+[component_container_isolated-6] [INFO] [1741165585.169651207] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.170431861] [robot3.controller_server]: Configuring controller interface
+[component_container_isolated-6] [INFO] [1741165585.170851308] [robot3.controller_server]: getting goal checker plugins..
+[component_container_isolated-6] [INFO] [1741165585.171050764] [robot3.controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-6] [INFO] [1741165585.171085648] [robot3.local_costmap.local_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.178678182] [robot3.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-2] [INFO] [1741165585.178825679] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.179021769] [robot1.planner_server]: Configuring
+[component_container_isolated-2] [INFO] [1741165585.179113113] [robot1.global_costmap.global_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.180784016] [robot3.local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-4] [INFO] [1741165585.182380039] [robot2.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-4] [INFO] [1741165585.182982445] [robot2.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-2] [INFO] [1741165585.184088177] [robot1.global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-2] [INFO] [1741165585.185056029] [robot1.global_costmap.global_costmap]: Subscribing to the map topic (/robot1/map) with transient local durability
+[component_container_isolated-2] [INFO] [1741165585.186787098] [robot1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-2] [INFO] [1741165585.186814648] [robot1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-2] [INFO] [1741165585.187614479] [robot1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-6] [INFO] [1741165585.188800601] [robot3.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-6] [INFO] [1741165585.188830047] [robot3.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-4] [INFO] [1741165585.189526481] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.189650915] [robot2.planner_server]: Configuring
+[component_container_isolated-4] [INFO] [1741165585.189698292] [robot2.global_costmap.global_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.189747627] [robot3.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-2] [INFO] [1741165585.191097870] [robot1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-2] [INFO] [1741165585.191129342] [robot1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-2] [INFO] [1741165585.192798579] [robot1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-4] [INFO] [1741165585.196143470] [robot2.global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-4] [INFO] [1741165585.196942095] [robot2.global_costmap.global_costmap]: Subscribing to the map topic (/robot2/map) with transient local durability
+[component_container_isolated-4] [INFO] [1741165585.198267811] [robot2.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-4] [INFO] [1741165585.198301080] [robot2.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-4] [INFO] [1741165585.199125140] [robot2.global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-6] [INFO] [1741165585.203246509] [robot3.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-4] [INFO] [1741165585.203255302] [robot2.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-4] [INFO] [1741165585.203283515] [robot2.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1741165585.203909610] [robot3.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-4] [INFO] [1741165585.204267564] [robot2.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1741165585.204383418] [robot3.controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-2] [INFO] [1741165585.206064145] [robot1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-2] [INFO] [1741165585.206104977] [robot1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1741165585.206661121] [robot3.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-6] [INFO] [1741165585.208059504] [robot3.controller_server]: Setting transform_tolerance to 0.200000
+[component_container_isolated-2] [INFO] [1741165585.209125269] [robot1.planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-4] [INFO] [1741165585.213819695] [robot2.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-4] [INFO] [1741165585.213858607] [robot2.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-4] [INFO] [1741165585.218238777] [robot2.planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-6] [INFO] [1741165585.220552979] [robot3.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-6] [INFO] [1741165585.220940958] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.221023340] [robot3.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-6] [INFO] [1741165585.221644577] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.221809966] [robot3.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-6] [INFO] [1741165585.222033061] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.222161844] [robot3.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-6] [INFO] [1741165585.222550888] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.222694106] [robot3.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-6] [INFO] [1741165585.223053438] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.223179297] [robot3.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-6] [INFO] [1741165585.223364731] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.223482244] [robot3.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-6] [INFO] [1741165585.223659002] [robot3.controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1741165585.223671576] [robot3.controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-2] [INFO] [1741165585.227604559] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.227841972] [robot1.behavior_server]: Configuring
+[component_container_isolated-4] [INFO] [1741165585.230325823] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.230543712] [robot2.behavior_server]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.231959099] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.232148827] [robot3.smoother_server]: Configuring smoother server
+[component_container_isolated-2] [INFO] [1741165585.234451565] [robot1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-2] [INFO] [1741165585.235233654] [robot1.behavior_server]: Configuring spin
+[component_container_isolated-4] [INFO] [1741165585.237038809] [robot2.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-4] [INFO] [1741165585.237780079] [robot2.behavior_server]: Configuring spin
+[component_container_isolated-6] [INFO] [1741165585.238689100] [robot3.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-6] [INFO] [1741165585.240182843] [robot3.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-6] [INFO] [1741165585.245266380] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.245478870] [robot3.planner_server]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.245512452] [robot3.global_costmap.global_costmap]: Configuring
+[component_container_isolated-2] [INFO] [1741165585.247593441] [robot1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-4] [INFO] [1741165585.247800245] [robot2.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-2] [INFO] [1741165585.248197397] [robot1.behavior_server]: Configuring backup
+[component_container_isolated-4] [INFO] [1741165585.248521665] [robot2.behavior_server]: Configuring backup
+[component_container_isolated-6] [INFO] [1741165585.249186036] [robot3.global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-6] [INFO] [1741165585.249904014] [robot3.global_costmap.global_costmap]: Subscribing to the map topic (/robot3/map) with transient local durability
+[component_container_isolated-6] [INFO] [1741165585.250619682] [robot3.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-6] [INFO] [1741165585.250641205] [robot3.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-6] [INFO] [1741165585.251390739] [robot3.global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-6] [INFO] [1741165585.254894215] [robot3.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-6] [INFO] [1741165585.254925104] [robot3.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-4] [INFO] [1741165585.255156865] [robot2.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-2] [INFO] [1741165585.255462269] [robot1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-4] [INFO] [1741165585.255785105] [robot2.behavior_server]: Configuring drive_on_heading
+[component_container_isolated-6] [INFO] [1741165585.255918568] [robot3.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-2] [INFO] [1741165585.256193744] [robot1.behavior_server]: Configuring drive_on_heading
+[component_container_isolated-2] [INFO] [1741165585.262688894] [robot1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-4] [INFO] [1741165585.263161967] [robot2.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-2] [INFO] [1741165585.263394949] [robot1.behavior_server]: Configuring wait
+[component_container_isolated-4] [INFO] [1741165585.263784263] [robot2.behavior_server]: Configuring wait
+[component_container_isolated-6] [INFO] [1741165585.264244770] [robot3.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-6] [INFO] [1741165585.264278454] [robot3.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1741165585.266260217] [robot3.planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-2] [INFO] [1741165585.268226210] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.268382014] [robot1.bt_navigator]: Configuring
+[component_container_isolated-4] [INFO] [1741165585.270902544] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.271031989] [robot2.bt_navigator]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.276113437] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.276366060] [robot3.behavior_server]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.281126100] [robot3.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-6] [INFO] [1741165585.281744799] [robot3.behavior_server]: Configuring spin
+[component_container_isolated-6] [INFO] [1741165585.286935591] [robot3.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-6] [INFO] [1741165585.287818579] [robot3.behavior_server]: Configuring backup
+[component_container_isolated-6] [INFO] [1741165585.293247663] [robot3.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-6] [INFO] [1741165585.294168020] [robot3.behavior_server]: Configuring drive_on_heading
+[component_container_isolated-6] [INFO] [1741165585.306950586] [robot3.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-6] [INFO] [1741165585.307818296] [robot3.behavior_server]: Configuring wait
+[component_container_isolated-6] [INFO] [1741165585.312335288] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.312468010] [robot3.bt_navigator]: Configuring
+[component_container_isolated-4] [INFO] [1741165585.345031794] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.345241493] [robot2.waypoint_follower]: Configuring
+[component_container_isolated-4] [INFO] [1741165585.355607041] [robot2.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-4] [INFO] [1741165585.357321444] [robot2.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.357529172] [robot2.velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-4] [INFO] [1741165585.360614555] [robot2.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.360785177] [robot2.controller_server]: Activating
+[component_container_isolated-4] [INFO] [1741165585.360848147] [robot2.local_costmap.local_costmap]: Activating
+[component_container_isolated-4] [INFO] [1741165585.360865225] [robot2.local_costmap.local_costmap]: Checking transform
+[component_container_isolated-4] [INFO] [1741165585.360970562] [robot2.local_costmap.local_costmap]: start
+[component_container_isolated-2] [INFO] [1741165585.364846019] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.365014316] [robot1.waypoint_follower]: Configuring
+[component_container_isolated-2] [INFO] [1741165585.375545768] [robot1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-2] [INFO] [1741165585.376713756] [robot1.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.376938967] [robot1.velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-2] [INFO] [1741165585.381054425] [robot1.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.381163940] [robot1.controller_server]: Activating
+[component_container_isolated-2] [INFO] [1741165585.381221221] [robot1.local_costmap.local_costmap]: Activating
+[component_container_isolated-2] [INFO] [1741165585.381238721] [robot1.local_costmap.local_costmap]: Checking transform
+[component_container_isolated-2] [INFO] [1741165585.381348663] [robot1.local_costmap.local_costmap]: start
+[component_container_isolated-6] [INFO] [1741165585.385991483] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.386112758] [robot3.waypoint_follower]: Configuring
+[component_container_isolated-6] [INFO] [1741165585.393897717] [robot3.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-6] [INFO] [1741165585.394701248] [robot3.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.394930230] [robot3.velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-6] [INFO] [1741165585.399211169] [robot3.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.399447402] [robot3.controller_server]: Activating
+[component_container_isolated-6] [INFO] [1741165585.399515048] [robot3.local_costmap.local_costmap]: Activating
+[component_container_isolated-6] [INFO] [1741165585.399531641] [robot3.local_costmap.local_costmap]: Checking transform
+[component_container_isolated-6] [INFO] [1741165585.399628627] [robot3.local_costmap.local_costmap]: start
+[component_container_isolated-4] [INFO] [1741165585.562139067] [robot2.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-2] [INFO] [1741165585.582196220] [robot1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165585.600322110] [robot3.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-4] [INFO] [1741165585.664907047] [robot2.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-4] [INFO] [1741165585.664937676] [robot2.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.665248418] [robot2.smoother_server]: Activating
+[component_container_isolated-4] [INFO] [1741165585.665271289] [robot2.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-2] [INFO] [1741165585.686566844] [robot1.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-2] [INFO] [1741165585.686602807] [robot1.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.687295812] [robot1.smoother_server]: Activating
+[component_container_isolated-2] [INFO] [1741165585.687323168] [robot1.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165585.705084208] [robot3.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-6] [INFO] [1741165585.705122380] [robot3.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.705567712] [robot3.smoother_server]: Activating
+[component_container_isolated-6] [INFO] [1741165585.705594538] [robot3.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[rviz2-5] [INFO] [1741165585.760693180] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1741165585.760794247] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-1] [INFO] [1741165585.762587696] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-1] [INFO] [1741165585.762634821] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[component_container_isolated-4] [INFO] [1741165585.768638134] [robot2.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-4] [INFO] [1741165585.768675379] [robot2.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.769102135] [robot2.planner_server]: Activating
+[component_container_isolated-4] [INFO] [1741165585.769134245] [robot2.global_costmap.global_costmap]: Activating
+[component_container_isolated-4] [INFO] [1741165585.769140678] [robot2.global_costmap.global_costmap]: Checking transform
+[component_container_isolated-4] [INFO] [1741165585.769204804] [robot2.global_costmap.global_costmap]: start
+[rviz2-5] [INFO] [1741165585.778932987] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-1] [INFO] [1741165585.778976006] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1741165585.780434399] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1741165585.780504347] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-3] [INFO] [1741165585.789219098] [rviz2]: Stereo is NOT SUPPORTED
+[component_container_isolated-2] [INFO] [1741165585.794388132] [robot1.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-2] [INFO] [1741165585.794428095] [robot1.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165585.794769494] [robot1.planner_server]: Activating
+[component_container_isolated-2] [INFO] [1741165585.794808824] [robot1.global_costmap.global_costmap]: Activating
+[component_container_isolated-2] [INFO] [1741165585.794821893] [robot1.global_costmap.global_costmap]: Checking transform
+[component_container_isolated-2] [INFO] [1741165585.794896993] [robot1.global_costmap.global_costmap]: start
+[component_container_isolated-6] [INFO] [1741165585.812291962] [robot3.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-6] [INFO] [1741165585.812319813] [robot3.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165585.812635052] [robot3.planner_server]: Activating
+[component_container_isolated-6] [INFO] [1741165585.812661578] [robot3.global_costmap.global_costmap]: Activating
+[component_container_isolated-6] [INFO] [1741165585.812667614] [robot3.global_costmap.global_costmap]: Checking transform
+[component_container_isolated-6] [INFO] [1741165585.812701343] [robot3.global_costmap.global_costmap]: start
+[component_container_isolated-4] [INFO] [1741165585.820007357] [robot2.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-4] [INFO] [1741165585.821227344] [robot2.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-4] [INFO] [1741165585.925156517] [robot2.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-4] [INFO] [1741165585.925249686] [robot2.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-4] [INFO] [1741165585.925630781] [robot2.behavior_server]: Activating
+[component_container_isolated-4] [INFO] [1741165585.925653893] [robot2.behavior_server]: Activating spin
+[component_container_isolated-4] [INFO] [1741165585.925676186] [robot2.behavior_server]: Activating backup
+[component_container_isolated-4] [INFO] [1741165585.925687382] [robot2.behavior_server]: Activating drive_on_heading
+[component_container_isolated-4] [INFO] [1741165585.925698884] [robot2.behavior_server]: Activating wait
+[component_container_isolated-4] [INFO] [1741165585.925911456] [robot2.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-4] [WARN] [1741165585.970065769] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165585.995014501] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165585.995055042] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [INFO] [1741165585.995884816] [robot1.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-2] [INFO] [1741165585.997075548] [robot1.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-6] [WARN] [1741165586.012834173] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165586.012897266] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [INFO] [1741165586.013244619] [robot3.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1741165586.014790143] [robot3.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-1] [INFO] [1741165586.023346576] [rviz2]: Trying to create a map of size 50 x 50 using 1 swatches
+[rviz2-5] [INFO] [1741165586.028158931] [rviz2]: Trying to create a map of size 50 x 50 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165586.037782462] [robot2.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-4] [INFO] [1741165586.037840126] [robot2.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-4] [INFO] [1741165586.038312594] [robot2.bt_navigator]: Activating
+[component_container_isolated-4] [INFO] [1741165586.096167016] [robot2.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-2] [INFO] [1741165586.102856291] [robot1.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-2] [INFO] [1741165586.102889297] [robot1.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-2] [INFO] [1741165586.103590454] [robot1.behavior_server]: Activating
+[component_container_isolated-2] [INFO] [1741165586.103615148] [robot1.behavior_server]: Activating spin
+[component_container_isolated-2] [INFO] [1741165586.103637093] [robot1.behavior_server]: Activating backup
+[component_container_isolated-2] [INFO] [1741165586.103648685] [robot1.behavior_server]: Activating drive_on_heading
+[component_container_isolated-2] [INFO] [1741165586.103659232] [robot1.behavior_server]: Activating wait
+[component_container_isolated-2] [INFO] [1741165586.103672693] [robot1.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165586.117664313] [robot3.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-6] [INFO] [1741165586.117691018] [robot3.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.118110153] [robot3.behavior_server]: Activating
+[component_container_isolated-6] [INFO] [1741165586.118134484] [robot3.behavior_server]: Activating spin
+[component_container_isolated-6] [INFO] [1741165586.118144859] [robot3.behavior_server]: Activating backup
+[component_container_isolated-6] [INFO] [1741165586.118149639] [robot3.behavior_server]: Activating drive_on_heading
+[component_container_isolated-6] [INFO] [1741165586.118154501] [robot3.behavior_server]: Activating wait
+[component_container_isolated-6] [INFO] [1741165586.118160691] [robot3.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[rviz2-5] [ERROR] [1741165586.153267465] [rviz2]: Lookup would require extrapolation into the future.  Requested time 6.316459 but the latest data is at time 6.266667, when looking up transform from frame [base_scan] to frame [map]
+[rviz2-3] [ERROR] [1741165586.156802954] [rviz2]: Lookup would require extrapolation into the future.  Requested time 6.316459 but the latest data is at time 6.266667, when looking up transform from frame [base_scan] to frame [map]
+[rviz2-1] [ERROR] [1741165586.169015122] [rviz2]: Lookup would require extrapolation into the future.  Requested time 6.316459 but the latest data is at time 6.300000, when looking up transform from frame [base_scan] to frame [map]
+[component_container_isolated-4] [WARN] [1741165586.170038956] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-4] [WARN] [1741165586.170054658] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165586.194997702] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165586.195030888] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [INFO] [1741165586.198746242] [robot2.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-4] [INFO] [1741165586.198777776] [robot2.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-4] [INFO] [1741165586.199177634] [robot2.waypoint_follower]: Activating
+[component_container_isolated-4] [INFO] [1741165586.199213700] [robot2.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-2] [INFO] [1741165586.208300083] [robot1.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-2] [INFO] [1741165586.208351145] [robot1.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-2] [INFO] [1741165586.208848075] [robot1.bt_navigator]: Activating
+[component_container_isolated-6] [WARN] [1741165586.212831175] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165586.212877267] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [INFO] [1741165586.221974422] [robot3.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-6] [INFO] [1741165586.222003325] [robot3.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.222554276] [robot3.bt_navigator]: Activating
+[component_container_isolated-2] [INFO] [1741165586.281505719] [robot1.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165586.288760817] [robot3.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-4] [INFO] [1741165586.303747808] [robot2.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-4] [INFO] [1741165586.303774361] [robot2.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-4] [INFO] [1741165586.304124347] [robot2.velocity_smoother]: Activating
+[component_container_isolated-4] [INFO] [1741165586.304160097] [robot2.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-4] [WARN] [1741165586.370047165] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-4] [WARN] [1741165586.370552796] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [INFO] [1741165586.385877941] [robot1.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-2] [INFO] [1741165586.385936542] [robot1.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-2] [INFO] [1741165586.386428278] [robot1.waypoint_follower]: Activating
+[component_container_isolated-2] [INFO] [1741165586.386450705] [robot1.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165586.392624822] [robot3.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-6] [INFO] [1741165586.392670020] [robot3.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.393197742] [robot3.waypoint_follower]: Activating
+[component_container_isolated-6] [INFO] [1741165586.393251175] [robot3.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-2] [WARN] [1741165586.395178311] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165586.395215214] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [INFO] [1741165586.407286944] [robot2.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-4] [INFO] [1741165586.407319103] [robot2.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-4] [INFO] [1741165586.407334824] [robot2.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-6] [WARN] [1741165586.412797430] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165586.412832698] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [INFO] [1741165586.494296093] [robot1.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-2] [INFO] [1741165586.494328636] [robot1.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-2] [INFO] [1741165586.494762946] [robot1.velocity_smoother]: Activating
+[component_container_isolated-2] [INFO] [1741165586.494794012] [robot1.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1741165586.498991866] [robot3.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-6] [INFO] [1741165586.499030770] [robot3.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.499452302] [robot3.velocity_smoother]: Activating
+[component_container_isolated-6] [INFO] [1741165586.499520840] [robot3.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-4] [WARN] [1741165586.570060648] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[rviz2-3] [INFO] [1741165586.573929254] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[component_container_isolated-2] [WARN] [1741165586.595010805] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165586.595033893] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [INFO] [1741165586.598237235] [robot1.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-2] [INFO] [1741165586.598265357] [robot1.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-2] [INFO] [1741165586.598287504] [robot1.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.606197346] [robot3.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-6] [INFO] [1741165586.606581185] [robot3.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-6] [INFO] [1741165586.606598600] [robot3.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-6] [WARN] [1741165586.612805029] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165586.612826456] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[rviz2-5] [INFO] [1741165586.632669777] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[component_container_isolated-4] [WARN] [1741165586.770051651] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165586.794993343] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165586.795015983] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[rviz2-3] [INFO] [1741165586.796531451] [rviz2]: Trying to create a map of size 50 x 50 using 1 swatches
+[rviz2-1] [INFO] [1741165586.808949547] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[component_container_isolated-6] [WARN] [1741165586.813001982] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165586.813030635] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165586.970064159] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165586.994990169] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165586.995013191] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165587.012804434] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165587.012834300] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165587.170053681] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165587.195125768] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165587.195154069] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165587.212810704] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165587.212842413] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165587.370034843] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-4] [WARN] [1741165587.370060326] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165587.395050342] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165587.395090256] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165587.412809722] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165587.412839954] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165587.570061278] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165587.570122987] [robot2.global_costmap.global_costmap]: Can't update static costmap layer, no map received
+[component_container_isolated-2] [WARN] [1741165587.595125350] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165587.595152667] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165587.612798593] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165587.612821035] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165587.770087310] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165587.795006335] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165587.795049177] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165587.795111249] [robot1.global_costmap.global_costmap]: Can't update static costmap layer, no map received
+[component_container_isolated-6] [WARN] [1741165587.812800097] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165587.812824828] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165587.812857820] [robot3.global_costmap.global_costmap]: Can't update static costmap layer, no map received
+[component_container_isolated-4] [WARN] [1741165587.970132593] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-4] [WARN] [1741165587.970172011] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165587.995040927] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165587.995065874] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165588.012815525] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165588.012845753] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165588.170047058] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165588.195006917] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165588.195048172] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165588.212812274] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165588.212842702] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165588.370050939] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-4] [WARN] [1741165588.370082152] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165588.394980918] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165588.395002483] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165588.412849180] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165588.412883180] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [WARN] [1741165588.570055726] [robot2.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.00) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [WARN] [1741165588.594982967] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165588.595008393] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [WARN] [1741165588.612800713] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165588.612822947] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-4] [INFO] [1741165588.726923536] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 293 X 382 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165588.749666655] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[rviz2-3] [INFO] [1741165588.780333298] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[component_container_isolated-2] [WARN] [1741165588.795316493] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-2] [WARN] [1741165588.795345001] [robot1.global_costmap.global_costmap]: Sensor origin at (-0.03, 0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-2] [INFO] [1741165588.802737292] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 293 X 382 at 0.050000 m/pix
+[component_container_isolated-6] [WARN] [1741165588.812813007] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-6] [WARN] [1741165588.812844136] [robot3.global_costmap.global_costmap]: Sensor origin at (-0.03, -0.26) is out of map bounds (0.00, 0.00) to (4.95, 4.95). The costmap cannot raytrace for it.
+[component_container_isolated-6] [INFO] [1741165588.814210732] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 293 X 382 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165588.825318201] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[rviz2-5] [INFO] [1741165588.841249592] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[rviz2-5] [INFO] [1741165589.034663079] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[rviz2-1] [INFO] [1741165589.400756931] [rviz2]: Trying to create a map of size 293 x 382 using 1 swatches
+[rviz2-1] [INFO] [1741165595.800389162] [robot1.rviz]: Message Filter dropping message: frame 'odom' at time 6.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1741165595.849937747] [robot3.rviz]: Message Filter dropping message: frame 'odom' at time 6.133 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] Start navigation
+[rviz2-5] [INFO] [1741165816.333555482] [robot3.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-6] [INFO] [1741165816.334247706] [robot3.bt_navigator]: Begin navigating from current location (-0.00, -0.26) to (0.42, 1.65)
+[component_container_isolated-6] [INFO] [1741165816.354921713] [robot3.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-6] [WARN] [1741165816.355019795] [robot3.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded goal_checker . This warning will appear once.
+[component_container_isolated-6] [INFO] [1741165817.405352777] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165818.455379492] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165818.734313337] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165818.770095426] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 299 X 389 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165818.809005034] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165818.812832628] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 299 X 389 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165818.829872526] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165818.995033061] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 299 X 389 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165819.455369955] [robot3.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165819.625300180] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[rviz2-3] [INFO] [1741165819.790111345] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[rviz2-1] [INFO] [1741165819.802458512] [rviz2]: Trying to create a map of size 299 x 389 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165820.505368417] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165821.505366404] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165822.555367427] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165823.605366882] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] Start navigation
+[rviz2-3] [INFO] [1741165824.101412692] [robot2.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-4] [INFO] [1741165824.102047129] [robot2.bt_navigator]: Begin navigating from current location (-0.00, 0.00) to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165824.103489569] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165824.103512567] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165824.103518918] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165824.122453499] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [WARN] [1741165824.173509016] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165824.173578523] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165824.173601192] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165824.192435131] [robot2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-4] [INFO] [1741165824.192981992] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [WARN] [1741165824.374158211] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165824.374225186] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165824.374242672] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165824.392435307] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [WARN] [1741165824.573876245] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165824.573925970] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165824.573955760] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165824.592707914] [robot2.behavior_server]: Running spin
+[component_container_isolated-4] [INFO] [1741165824.592764073] [robot2.behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-6] [INFO] [1741165824.605378938] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165825.292942673] [robot2.behavior_server]: spin completed successfully
+[component_container_isolated-4] [WARN] [1741165825.322884919] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165825.322929272] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165825.322938423] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165825.332330042] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [WARN] [1741165825.373278673] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165825.373317905] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.13, -4.48)
+[component_container_isolated-4] [WARN] [1741165825.373327809] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165825.392441306] [robot2.behavior_server]: Running wait
+[component_container_isolated-6] [INFO] [1741165825.655369172] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165826.655377513] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165827.459342408] [robot3.controller_server]: Reached the goal!
+[component_container_isolated-6] [INFO] [1741165827.494477832] [robot3.bt_navigator]: Goal succeeded
+[rviz2-3] [INFO] [1741165828.749178296] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165828.770158732] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 332 X 403 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165828.825748023] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[rviz2-5] [INFO] [1741165828.840813133] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165828.995004123] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 332 X 403 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165829.012809432] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 332 X 403 at 0.050000 m/pix
+[rviz2-1] Start navigation
+[rviz2-1] [INFO] [1741165829.152232156] [robot1.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-2] [INFO] [1741165829.152657606] [robot1.bt_navigator]: Begin navigating from current location (-0.00, 0.26) to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165829.154502226] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165829.154541263] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165829.154552978] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165829.173028827] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-2] [WARN] [1741165829.204773653] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165829.204865767] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165829.204899966] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[rviz2-1] [INFO] [1741165829.209357468] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165829.222885021] [robot1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-2] [INFO] [1741165829.223205129] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[rviz2-3] [INFO] [1741165829.390837384] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[component_container_isolated-2] [WARN] [1741165829.404747391] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165829.404797912] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165829.404808207] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165829.422862281] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-2] [WARN] [1741165829.603869692] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165829.603920979] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165829.603935613] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165829.623034256] [robot1.behavior_server]: Running spin
+[component_container_isolated-2] [INFO] [1741165829.623091789] [robot1.behavior_server]: Turning 1.57 for spin behavior.
+[rviz2-5] [INFO] [1741165829.833748388] [rviz2]: Trying to create a map of size 332 x 403 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165830.323224833] [robot1.behavior_server]: spin completed successfully
+[component_container_isolated-2] [WARN] [1741165830.353822911] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165830.353866940] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165830.353879347] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165830.373394360] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [INFO] [1741165830.392796134] [robot2.behavior_server]: wait completed successfully
+[component_container_isolated-2] [WARN] [1741165830.404176604] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165830.404215550] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165830.404226083] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165830.423222193] [robot1.behavior_server]: Running wait
+[component_container_isolated-4] [INFO] [1741165830.442820328] [robot2.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-4] [WARN] [1741165830.442881120] [robot2.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded goal_checker . This warning will appear once.
+[component_container_isolated-4] [INFO] [1741165831.493037504] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165832.543055572] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165833.543036567] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165833.743722425] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165833.770046308] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 439 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165833.818043713] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[rviz2-5] [INFO] [1741165833.833452858] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165833.994981928] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 439 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165834.012841681] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 439 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165834.026358127] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[rviz2-3] [INFO] [1741165834.575571658] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165834.593035456] [robot2.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165834.809543351] [rviz2]: Trying to create a map of size 335 x 439 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165835.423957535] [robot1.behavior_server]: wait completed successfully
+[component_container_isolated-2] [WARN] [1741165835.453587529] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165835.453625944] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165835.453642877] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165835.462847306] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [INFO] [1741165835.593037867] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [WARN] [1741165835.603806366] [robot1.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-2] [WARN] [1741165835.603860797] [robot1.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-10.07, -1.75)
+[component_container_isolated-2] [WARN] [1741165835.603882812] [robot1.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165835.623898367] [robot1.behavior_server]: Running backup
+[component_container_isolated-2] [INFO] [1741165835.624002901] [robot1.behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[component_container_isolated-4] [INFO] [1741165836.643031791] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165837.643072969] [robot2.controller_server]: Passing new path to controller.
+[rviz2-5] Start navigation
+[rviz2-5] [INFO] [1741165838.493024201] [robot3.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-6] [INFO] [1741165838.493742222] [robot3.bt_navigator]: Begin navigating from current location (0.50, 1.43) to (-11.83, 2.01)
+[component_container_isolated-6] [WARN] [1741165838.495036413] [robot3.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-6] [WARN] [1741165838.495078078] [robot3.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-11.83, 2.01)
+[component_container_isolated-6] [WARN] [1741165838.495092415] [robot3.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-6] [INFO] [1741165838.516111042] [robot3.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-6] [WARN] [1741165838.617056142] [robot3.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-6] [WARN] [1741165838.617088660] [robot3.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-11.83, 2.01)
+[component_container_isolated-6] [WARN] [1741165838.617096187] [robot3.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-6] [INFO] [1741165838.633924024] [robot3.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-6] [INFO] [1741165838.634196470] [robot3.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [INFO] [1741165838.693044635] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [WARN] [1741165838.815179308] [robot3.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-6] [WARN] [1741165838.815229819] [robot3.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-11.83, 2.01)
+[component_container_isolated-6] [WARN] [1741165838.815243565] [robot3.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-6] [INFO] [1741165838.833910322] [robot3.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-6] [INFO] [1741165839.044290685] [robot3.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-4] [INFO] [1741165839.693034807] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165840.094500156] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165840.743055283] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165841.144501020] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165841.793029737] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165842.145540488] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165842.793093517] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165843.194504848] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165843.758388150] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165843.770052993] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 465 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165843.823263147] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[rviz2-1] [INFO] [1741165843.832676021] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165843.843033902] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165843.994988402] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 465 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165844.014622738] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 465 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165844.176383965] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165844.244503051] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165844.601255054] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[rviz2-5] [INFO] [1741165844.620527894] [rviz2]: Trying to create a map of size 335 x 465 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165844.843032866] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165845.244502021] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [WARN] [1741165845.624058485] [robot1.behavior_server]: Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
+[component_container_isolated-2] [WARN] [1741165845.624098632] [robot1.behavior_server]: backup failed
+[component_container_isolated-2] [WARN] [1741165845.624113467] [robot1.behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165845.642874209] [robot1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-2] [INFO] [1741165845.643071907] [robot1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-2] [INFO] [1741165845.823077118] [robot1.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-2] [WARN] [1741165845.823129041] [robot1.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded goal_checker . This warning will appear once.
+[component_container_isolated-4] [INFO] [1741165845.893037485] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165846.294504856] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165846.873297718] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165846.943030949] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165847.294506969] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165847.923306140] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165847.943035927] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165848.344511576] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165848.750890456] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165848.770035950] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 497 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165848.828632293] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[rviz2-5] [INFO] [1741165848.843057348] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165848.923296507] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165848.993037275] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165848.995002339] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 497 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165849.013447260] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 497 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165849.019290310] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165849.344506369] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165849.392925435] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165849.973297571] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165849.993037193] [robot2.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165850.028122617] [rviz2]: Trying to create a map of size 335 x 497 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165850.394506056] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165850.973374697] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165851.043030435] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165851.444508756] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165852.023294734] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165852.093035179] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165852.444499951] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165853.073347697] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165853.093034361] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165853.494558906] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165853.742100111] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165853.770052147] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 514 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165853.806119246] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[rviz2-1] [INFO] [1741165853.826141775] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[rviz2-5] [INFO] [1741165853.835482577] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165853.994988022] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 514 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165854.012801766] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 514 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165854.073300290] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165854.143038111] [robot2.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165854.428438298] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[rviz2-5] [INFO] [1741165854.443852928] [rviz2]: Trying to create a map of size 335 x 514 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165854.494499432] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165855.123299496] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165855.143131613] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165855.544501930] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165856.123301762] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165856.193042204] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165856.594504036] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165857.173295660] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165857.193076686] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165857.595546768] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] Start navigation
+[rviz2-3] [INFO] [1741165858.146245653] [robot2.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-4] [INFO] [1741165858.152189406] [robot2.bt_navigator]: Received goal preemption request
+[component_container_isolated-4] [INFO] [1741165858.152301204] [robot2.bt_navigator]: Begin navigating from current location (-4.50, -3.89) to (-2.65, -10.72)
+[component_container_isolated-2] [INFO] [1741165858.223301981] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165858.243035104] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165858.644502427] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165858.767583644] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165858.770045416] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 534 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165858.826104771] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[rviz2-1] [INFO] [1741165858.844447634] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165858.995543710] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 534 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165859.012811933] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 534 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165859.188695977] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165859.223296330] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165859.243038012] [robot2.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165859.616049044] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[rviz2-5] [INFO] [1741165859.627003677] [rviz2]: Trying to create a map of size 335 x 534 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165859.644503208] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165860.273296441] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165860.293036744] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165860.694518508] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165861.273313615] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165861.294059450] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165861.744511269] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] Start navigation
+[rviz2-1] [INFO] [1741165861.931958061] [robot1.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-2] [INFO] [1741165861.932894966] [robot1.bt_navigator]: Received goal preemption request
+[component_container_isolated-2] [INFO] [1741165861.933031897] [robot1.bt_navigator]: Begin navigating from current location (-3.16, -0.21) to (-11.51, -9.18)
+[component_container_isolated-2] [INFO] [1741165862.323305513] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165862.343032134] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165862.744505073] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165863.374298216] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165863.393038060] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165863.762579228] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165863.770051832] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 552 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165863.794498970] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165863.838548770] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[rviz2-5] [INFO] [1741165863.850903483] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165863.994986700] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 552 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165864.012818873] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 335 X 552 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165864.373299502] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165864.393036973] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165864.400493157] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165864.794509782] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165865.022662391] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[rviz2-5] [INFO] [1741165865.034213699] [rviz2]: Trying to create a map of size 335 x 552 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165865.423297187] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165865.443049130] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165865.844501647] [robot3.controller_server]: Passing new path to controller.
+[rviz2-5] Start navigation
+[rviz2-5] [INFO] [1741165866.236305759] [robot3.rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[component_container_isolated-6] [INFO] [1741165866.243911610] [robot3.bt_navigator]: Received goal preemption request
+[component_container_isolated-6] [INFO] [1741165866.244022933] [robot3.bt_navigator]: Begin navigating from current location (-5.71, 1.85) to (-2.93, -13.39)
+[component_container_isolated-2] [INFO] [1741165866.423322435] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165866.443571789] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165866.894509356] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165867.473297288] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165867.493031076] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165867.894505773] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165868.523306364] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165868.543035969] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165868.750265952] [rviz2]: Trying to create a map of size 332 x 562 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165868.770034302] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 332 X 562 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165868.833622540] [rviz2]: Trying to create a map of size 332 x 562 using 1 swatches
+[rviz2-5] [INFO] [1741165868.844912654] [rviz2]: Trying to create a map of size 339 x 557 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165868.944500771] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165868.995027438] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 332 X 562 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165869.012801912] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 339 X 557 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165869.022804612] [rviz2]: Trying to create a map of size 332 x 562 using 1 swatches
+[rviz2-5] [INFO] [1741165869.230404034] [rviz2]: Trying to create a map of size 339 x 557 using 1 swatches
+[component_container_isolated-4] [WARN] [1741165869.516524955] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165869.516585817] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-2.65, -10.72)
+[component_container_isolated-4] [WARN] [1741165869.516601798] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-2] [INFO] [1741165869.523304729] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165869.532306798] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [INFO] [1741165869.543029889] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [ERROR] [1741165869.543127864] [robot2.controller_server]: Invalid path, Path is empty.
+[component_container_isolated-4] [WARN] [1741165869.543148338] [robot2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165869.572360560] [robot2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-4] [INFO] [1741165869.572971962] [robot2.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-4] [ERROR] [1741165869.573091960] [robot2.controller_server]: Invalid path, Path is empty.
+[component_container_isolated-4] [WARN] [1741165869.573149611] [robot2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[component_container_isolated-4] [WARN] [1741165869.575190029] [robot2.planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-4] [WARN] [1741165869.575224463] [robot2.planner_server]: Planning algorithm GridBased failed to generate a valid path to (-2.65, -10.72)
+[component_container_isolated-4] [WARN] [1741165869.575237968] [robot2.planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[rviz2-3] [INFO] [1741165869.583001430] [rviz2]: Trying to create a map of size 332 x 562 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165869.592744733] [robot2.behavior_server]: Running backup
+[component_container_isolated-4] [INFO] [1741165869.593360256] [robot2.behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[component_container_isolated-6] [INFO] [1741165869.944560764] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165870.573310663] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165870.994510431] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165871.573307410] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165872.044501302] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165872.623298242] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165873.044502270] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165873.673332533] [robot1.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165873.742968150] [rviz2]: Trying to create a map of size 333 x 566 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165873.770094211] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 333 X 566 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165873.822991708] [rviz2]: Trying to create a map of size 333 x 566 using 1 swatches
+[rviz2-5] [INFO] [1741165873.835931998] [rviz2]: Trying to create a map of size 340 x 561 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165873.994980969] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 333 X 566 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165874.012857250] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 340 X 561 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165874.094777454] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165874.191894675] [rviz2]: Trying to create a map of size 333 x 566 using 1 swatches
+[rviz2-5] [INFO] [1741165874.446776626] [rviz2]: Trying to create a map of size 340 x 561 using 1 swatches
+[rviz2-1] [INFO] [1741165874.621307852] [rviz2]: Trying to create a map of size 333 x 566 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165874.673352588] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165875.094500393] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165875.723296445] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165876.144501851] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165876.723300985] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165877.197804736] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165877.773307401] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165878.194502458] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165878.770059441] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 333 X 566 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165878.773296617] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165878.994981203] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 333 X 566 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165879.244507141] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [WARN] [1741165879.593386495] [robot2.behavior_server]: Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
+[component_container_isolated-4] [WARN] [1741165879.593420227] [robot2.behavior_server]: backup failed
+[component_container_isolated-4] [WARN] [1741165879.593428546] [robot2.behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-4] [INFO] [1741165879.612276653] [robot2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-4] [INFO] [1741165879.612475026] [robot2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-4] [INFO] [1741165879.802492066] [robot2.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-2] [INFO] [1741165879.824070492] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165880.244505220] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165880.852738197] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165880.873300727] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165881.294505895] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165881.873325757] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165881.902738785] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165882.294507504] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165882.902736498] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165882.923294258] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165883.344500456] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165883.759353128] [rviz2]: Trying to create a map of size 538 x 566 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165883.770040900] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 538 X 566 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165883.835050978] [rviz2]: Trying to create a map of size 538 x 566 using 1 swatches
+[rviz2-5] [INFO] [1741165883.853785101] [rviz2]: Trying to create a map of size 541 x 562 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165883.923357208] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165883.952745089] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165883.994989974] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 538 X 566 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165884.012813221] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 541 X 562 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165884.394500971] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165884.419148435] [rviz2]: Trying to create a map of size 538 x 566 using 1 swatches
+[rviz2-5] [INFO] [1741165884.627179405] [rviz2]: Trying to create a map of size 541 x 562 using 1 swatches
+[rviz2-3] [INFO] [1741165884.782475606] [rviz2]: Trying to create a map of size 538 x 566 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165884.952736768] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165884.973305140] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165885.394511671] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165885.973434809] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165886.002740066] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165886.321923876] [robot1.global_costmap.global_costmap]: Message Filter dropping message: frame 'base_scan' at time 306.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[component_container_isolated-6] [INFO] [1741165886.444503133] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165887.002742600] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165887.023328891] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165887.444660560] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165888.052786639] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165888.073295072] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165888.495551804] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165888.755139284] [rviz2]: Trying to create a map of size 540 x 566 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165888.770053376] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 540 X 566 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165888.830966332] [rviz2]: Trying to create a map of size 540 x 566 using 1 swatches
+[rviz2-5] [INFO] [1741165888.854278162] [rviz2]: Trying to create a map of size 542 x 562 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165888.995021475] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 540 X 566 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165889.005670766] [rviz2]: Trying to create a map of size 540 x 566 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165889.012826389] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 542 X 562 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165889.073300970] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165889.102748515] [robot2.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165889.406969228] [rviz2]: Trying to create a map of size 540 x 566 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165889.544516005] [robot3.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165889.650172765] [rviz2]: Trying to create a map of size 542 x 562 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165890.102741684] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165890.125416491] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165890.544502648] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165891.123298811] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165891.152738590] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165891.594518382] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165892.152737786] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165892.173299571] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165892.594502574] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165893.202737264] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165893.223327604] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165893.644503648] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165893.741832492] [rviz2]: Trying to create a map of size 540 x 571 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165893.770054602] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 540 X 571 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165893.823573147] [rviz2]: Trying to create a map of size 540 x 571 using 1 swatches
+[rviz2-5] [INFO] [1741165893.842208785] [rviz2]: Trying to create a map of size 542 x 567 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165893.995051841] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 540 X 571 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165894.012822112] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 542 X 567 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165894.223299852] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165894.252937500] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165894.381392810] [rviz2]: Trying to create a map of size 540 x 571 using 1 swatches
+[rviz2-1] [INFO] [1741165894.426442891] [rviz2]: Trying to create a map of size 540 x 571 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165894.694503810] [robot3.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165895.053411192] [rviz2]: Trying to create a map of size 542 x 567 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165895.252737673] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165895.273297728] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165895.694503809] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165896.274799132] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165896.302749874] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165896.744504264] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165897.302759075] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165897.323298867] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165897.744528201] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165898.323301694] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165898.352738173] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165898.765189176] [rviz2]: Trying to create a map of size 573 x 606 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165898.770046552] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 573 X 606 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165898.794501520] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165898.847344538] [rviz2]: Trying to create a map of size 573 x 606 using 1 swatches
+[rviz2-5] [INFO] [1741165898.863006739] [rviz2]: Trying to create a map of size 574 x 603 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165898.994978974] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 573 X 606 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165899.012839038] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 574 X 603 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165899.244097287] [rviz2]: Trying to create a map of size 574 x 603 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165899.378298646] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165899.402738548] [robot2.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165899.596967911] [rviz2]: Trying to create a map of size 573 x 606 using 1 swatches
+[rviz2-1] [INFO] [1741165899.609926001] [rviz2]: Trying to create a map of size 573 x 606 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165899.794500296] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165900.402739665] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165900.423300159] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165900.844503766] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165901.423320048] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165901.452746167] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165901.844505298] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165902.452770066] [robot2.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165902.473295061] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165902.895116707] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165903.455615232] [robot2.controller_server]: Reached the goal!
+[component_container_isolated-4] [INFO] [1741165903.462506864] [robot2.controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-4] [INFO] [1741165903.465166989] [robot2.controller_server]: Reached the goal!
+[component_container_isolated-2] [INFO] [1741165903.473298557] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165903.502249491] [robot2.bt_navigator]: Goal succeeded
+[rviz2-3] [INFO] [1741165903.756844339] [rviz2]: Trying to create a map of size 591 x 608 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165903.770046179] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[rviz2-3] [INFO] [1741165903.789812444] [rviz2]: Trying to create a map of size 591 x 608 using 1 swatches
+[rviz2-1] [INFO] [1741165903.834184129] [rviz2]: Trying to create a map of size 591 x 608 using 1 swatches
+[rviz2-5] [INFO] [1741165903.857946722] [rviz2]: Trying to create a map of size 591 x 605 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165903.944505249] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165903.995097473] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165904.012838256] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 605 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165904.523312343] [robot1.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165904.618842431] [rviz2]: Trying to create a map of size 591 x 605 using 1 swatches
+[rviz2-1] [INFO] [1741165904.826619556] [rviz2]: Trying to create a map of size 591 x 608 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165904.944553102] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165905.523313934] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165905.994513216] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165906.573306308] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165906.994507266] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165907.623316906] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165908.044498853] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165908.623292877] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165908.770042954] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165908.842634766] [rviz2]: Trying to create a map of size 592 x 606 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165908.995186630] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165909.012802732] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 592 X 606 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165909.094501532] [robot3.controller_server]: Passing new path to controller.
+[rviz2-5] [INFO] [1741165909.648658861] [rviz2]: Trying to create a map of size 592 x 606 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165909.673297429] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165910.094502570] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165910.673328171] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165911.144502269] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165911.723298153] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165912.144503902] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165912.723329166] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165913.194530156] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-4] [INFO] [1741165913.770120689] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[component_container_isolated-2] [INFO] [1741165913.773315174] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165913.995021375] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 591 X 608 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165914.012842963] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 592 X 606 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165914.244512551] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165914.773364992] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165915.244710426] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165915.823346395] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165916.294507058] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165916.873297752] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165917.294499718] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165917.873294167] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165918.344504647] [robot3.controller_server]: Passing new path to controller.
+[rviz2-3] [INFO] [1741165918.765847545] [rviz2]: Trying to create a map of size 592 x 608 using 1 swatches
+[component_container_isolated-4] [INFO] [1741165918.770052080] [robot2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 592 X 608 at 0.050000 m/pix
+[rviz2-1] [INFO] [1741165918.842577268] [rviz2]: Trying to create a map of size 592 x 608 using 1 swatches
+[rviz2-5] [INFO] [1741165918.858076513] [rviz2]: Trying to create a map of size 593 x 606 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165918.923312492] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165918.995007359] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 592 X 608 at 0.050000 m/pix
+[component_container_isolated-6] [INFO] [1741165919.012836098] [robot3.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 593 X 606 at 0.050000 m/pix
+[rviz2-5] [INFO] [1741165919.243886412] [rviz2]: Trying to create a map of size 593 x 606 using 1 swatches
+[component_container_isolated-6] [INFO] [1741165919.344505949] [robot3.controller_server]: Passing new path to controller.
+[rviz2-1] [INFO] [1741165919.608797797] [rviz2]: Trying to create a map of size 592 x 608 using 1 swatches
+[rviz2-3] [INFO] [1741165919.789272412] [rviz2]: Trying to create a map of size 592 x 608 using 1 swatches
+[component_container_isolated-2] [INFO] [1741165919.923300946] [robot1.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165920.378604947] [robot1.controller_server]: Reached the goal!
+[component_container_isolated-6] [INFO] [1741165920.394507651] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-2] [INFO] [1741165920.413027036] [robot1.bt_navigator]: Goal succeeded
+[component_container_isolated-6] [INFO] [1741165921.444504193] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165922.444504222] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165923.494504052] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165924.494462821] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165925.544530039] [robot3.controller_server]: Passing new path to controller.
+[component_container_isolated-6] [INFO] [1741165926.544504987] [robot3.controller_server]: Passing new path to controller.
