@@ -93,24 +93,17 @@ if __name__ == "__main__":
       # Launch Isaac Sim
       print("Launching Isaac Sim with ROS 2 bridge...")
       isaac_sim = launch_isaac_sim()
-      time.sleep(20)  # Wait for Isaac Sim to stabilize
+      time.sleep(15)  # Wait for Isaac Sim to stabilize
 
       # Launch SLAM Toolbox for each robot
       print("Launching SLAM components ...")
-      # slam1_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot1 use_sim_time:=True"
-      # slam2_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot2 use_sim_time:=True"
-      # slam3_command = "ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:=robot3 use_sim_time:=True"
-      # slam1_process = run_ros_command(slam1_command, "logs/slam1_log.txt")
-      # slam2_process = run_ros_command(slam2_command, "logs/slam2_log.txt")
-      # slam3_process = run_ros_command(slam3_command, "logs/slam3_log.txt")
 
       slam_processes = []
       for id in robot_ids:
           slam_command = f"ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:={id} use_sim_time:=True"
           slam_process = run_ros_command(slam_command, f"logs/{id}", "slam_log.txt")
           slam_processes.append(slam_process)
-
-      time.sleep(5)  
+      time.sleep(5) # Wait for SLAM to stabilize
 
       # Launch Navigation for each robot
       print("Launching Nav components ...")
@@ -150,15 +143,7 @@ if __name__ == "__main__":
                 os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
             except Exception as ex:
                 print(f"Could not kill process group for pid {proc.pid}: {ex}")
-        # slam1_process.terminate()
-        # slam2_process.terminate()
-        # slam3_process.terminate()
-        # nav_process.terminate()
-        # os.killpg(os.getpgid(slam1_process.pid), signal.SIGTERM)
-        # os.killpg(os.getpgid(slam2_process.pid), signal.SIGTERM)
-        # os.killpg(os.getpgid(slam3_process.pid), signal.SIGTERM)
-        # os.killpg(os.getpgid(nav_process.pid), signal.SIGTERM)
-        os.killpg(os.getpgid(isaac_sim.pid), signal.SIGTERM)
-
+        os.killpg(os.getpgid(isaac_sim.pid), signal.SIGTERM) # Make sure Isaac Sim is killed
+        print("Processes terminated.")
 
         
