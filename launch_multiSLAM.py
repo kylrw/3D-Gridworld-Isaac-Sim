@@ -4,8 +4,6 @@ import os
 import signal
 import argparse
 
-### Initialize Environment ###
-
 # Set paths
 HOME = os.path.expanduser("~")
 ISAAC_SIM_PATH = os.path.join(HOME, "isaacsim")
@@ -85,19 +83,15 @@ if __name__ == "__main__":
         robot_ids.append(f"robot{i+1}")
 
     try:
-
       # Source ROS2
       subprocess.run("source /opt/ros/humble/setup.bash", shell=True, executable="/bin/bash")
       subprocess.run("source ~/ros2_ws/install/setup.bash", shell=True, executable="/bin/bash")
 
-      # Launch Isaac Sim
       print("Launching Isaac Sim with ROS 2 bridge...")
       isaac_sim = launch_isaac_sim()
       time.sleep(15)  # Wait for Isaac Sim to stabilize
 
-      # Launch SLAM Toolbox for each robot
       print("Launching SLAM components ...")
-
       slam_processes = []
       for id in robot_ids:
           slam_command = f"ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:={id} use_sim_time:=True"
@@ -105,9 +99,8 @@ if __name__ == "__main__":
           slam_processes.append(slam_process)
       time.sleep(5) # Wait for SLAM to stabilize
 
-      # Launch Navigation for each robot
       print("Launching Nav components ...")
-      if args.debug:
+      if args.debug: 
         nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
       else:
         nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py use_rviz:=false"
@@ -117,7 +110,6 @@ if __name__ == "__main__":
 
       #map cmd: ros2 run nav2_map_server map_saver_cli -f robot1_map --ros-args -r __ns:=/robot1
 
-      # Launch Channel Processing for each robot
       print("Launching Channel Processing ...")
       channel_processes = []
       for id in robot_ids:
@@ -125,8 +117,7 @@ if __name__ == "__main__":
           channel_processing_process = run_ros_command(channel_processing_command, f"logs/{id}", "channel_processing.txt")
           channel_processes.append(channel_processing_process)
 
-      
-
+      # Send navigation goals
       while True:
           robot_id = input("Enter robot ID (robot1 or robot2): ").strip()
           x = float(input("Enter goal X coordinate: "))
