@@ -1,8 +1,0 @@
-qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
-[37;1m2025-03-04 20:06:08.482 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7415: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
-[37;1m2025-03-04 20:06:08.482 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7417: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
-[37;1m2025-03-04 20:06:08.482 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7419: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
-[INFO] [1741086368.846164017] [rviz2]: Stereo is NOT SUPPORTED
-[INFO] [1741086368.846262673] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
-[INFO] [1741086368.870944613] [rviz2]: Stereo is NOT SUPPORTED
-[ros2run]: Segmentation fault
