@@ -1,0 +1,16 @@
+[INFO] [1741874122.528402297] [robot3.map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741874122.528579990] [robot3.map_saver]: Creating
+[INFO] [1741874122.528735359] [robot3.map_saver]: Configuring
+[INFO] [1741874122.530448029] [robot3.map_saver]: Saving map from 'map' topic to 'maps/robot3/map' file
+[WARN] [1741874122.530490634] [robot3.map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+[WARN] [1741874122.530508150] [robot3.map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1741874123.530525773] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1741874123.530603799] [map_io]: Received a 49 X 31 map @ 1 m/pix
+[INFO] [1741874123.551766511] [map_io]: Writing map occupancy data to maps/robot3/map.pgm
+[INFO] [1741874123.552183585] [map_io]: Writing map metadata to maps/robot3/map.yaml
+[INFO] [1741874123.552260178] [map_io]: Map saved
+[INFO] [1741874123.552272069] [robot3.map_saver]: Map saved successfully
+[INFO] [1741874123.557534984] [robot3.map_saver]: Destroying
