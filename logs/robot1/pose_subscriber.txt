@@ -1,0 +1,111 @@
+[INFO] [1742039545.893708984] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1742039546.231186443] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1742039546.762223188] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1742039549.584335669] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039551.131586007] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039551.398130395] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039551.739476496] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039552.670159124] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039553.019454463] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039553.458161488] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039556.258539638] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039556.637303017] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1742039559.477743026] [pose_subscriber]: Robot Position: x=0, y=2
+[INFO] [1742039562.338608288] [pose_subscriber]: Robot Position: x=1, y=2
+[INFO] [1742039565.182263998] [pose_subscriber]: Robot Position: x=1, y=3
+[INFO] [1742039568.998271119] [pose_subscriber]: Robot Position: x=1, y=3
+[INFO] [1742039571.799288222] [pose_subscriber]: Robot Position: x=1, y=4
+[INFO] [1742039574.567310495] [pose_subscriber]: Robot Position: x=2, y=4
+[INFO] [1742039577.190778130] [pose_subscriber]: Robot Position: x=2, y=4
+[INFO] [1742039580.072960024] [pose_subscriber]: Robot Position: x=2, y=5
+[INFO] [1742039580.353441368] [pose_subscriber]: Robot Position: x=2, y=5
+[INFO] [1742039583.699560580] [pose_subscriber]: Robot Position: x=2, y=5
+[INFO] [1742039586.219119215] [pose_subscriber]: Robot Position: x=3, y=6
+[INFO] [1742039590.371636994] [pose_subscriber]: Robot Position: x=3, y=6
+[INFO] [1742039591.437481586] [pose_subscriber]: Robot Position: x=3, y=6
+[INFO] [1742039594.182011461] [pose_subscriber]: Robot Position: x=3, y=6
+[INFO] [1742039594.680245168] [pose_subscriber]: Robot Position: x=3, y=6
+[INFO] [1742039597.786036256] [pose_subscriber]: Robot Position: x=3, y=7
+[INFO] [1742039601.631036956] [pose_subscriber]: Robot Position: x=3, y=7
+[INFO] [1742039602.071245353] [pose_subscriber]: Robot Position: x=3, y=7
+[INFO] [1742039604.553194806] [pose_subscriber]: Robot Position: x=3, y=7
+[INFO] [1742039607.019122204] [pose_subscriber]: Robot Position: x=4, y=8
+[INFO] [1742039608.987562793] [pose_subscriber]: Robot Position: x=4, y=8
+[INFO] [1742039611.411961866] [pose_subscriber]: Robot Position: x=4, y=8
+[INFO] [1742039613.855618772] [pose_subscriber]: Robot Position: x=5, y=9
+[INFO] [1742039616.359279512] [pose_subscriber]: Robot Position: x=5, y=9
+[INFO] [1742039618.711046798] [pose_subscriber]: Robot Position: x=5, y=9
+[INFO] [1742039621.019738700] [pose_subscriber]: Robot Position: x=6, y=10
+[INFO] [1742039623.331722156] [pose_subscriber]: Robot Position: x=6, y=10
+[INFO] [1742039625.674375000] [pose_subscriber]: Robot Position: x=6, y=11
+[INFO] [1742039629.138936476] [pose_subscriber]: Robot Position: x=6, y=11
+[INFO] [1742039629.585236581] [pose_subscriber]: Robot Position: x=6, y=11
+[INFO] [1742039631.932676880] [pose_subscriber]: Robot Position: x=7, y=11
+[INFO] [1742039634.440046886] [pose_subscriber]: Robot Position: x=7, y=12
+[INFO] [1742039637.806106176] [pose_subscriber]: Robot Position: x=7, y=12
+[INFO] [1742039640.112902362] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039642.962466641] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039645.481999546] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039645.996195800] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039647.079394894] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039647.811455718] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039648.061267973] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039648.247942425] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039648.536841521] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039648.900827120] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039650.507491324] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039652.858410761] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039653.072779136] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039653.477390068] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039655.137803383] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039655.350725931] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039655.679523303] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039656.220399342] [pose_subscriber]: Robot Position: x=8, y=12
+[INFO] [1742039658.672217428] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039660.944220019] [pose_subscriber]: Robot Position: x=8, y=13
+[INFO] [1742039664.202907209] [pose_subscriber]: Robot Position: x=8, y=14
+[INFO] [1742039664.664343571] [pose_subscriber]: Robot Position: x=8, y=14
+[INFO] [1742039666.962273369] [pose_subscriber]: Robot Position: x=8, y=14
+[INFO] [1742039669.210202232] [pose_subscriber]: Robot Position: x=9, y=15
+[INFO] [1742039670.850193659] [pose_subscriber]: Robot Position: x=9, y=15
+[INFO] [1742039673.186629837] [pose_subscriber]: Robot Position: x=9, y=15
+[INFO] [1742039676.891205072] [pose_subscriber]: Robot Position: x=9, y=16
+[INFO] [1742039679.163630560] [pose_subscriber]: Robot Position: x=9, y=16
+[INFO] [1742039681.534260407] [pose_subscriber]: Robot Position: x=10, y=17
+[INFO] [1742039686.457171165] [pose_subscriber]: Robot Position: x=10, y=17
+[INFO] [1742039688.653647297] [pose_subscriber]: Robot Position: x=10, y=17
+[INFO] [1742039690.857413616] [pose_subscriber]: Robot Position: x=11, y=18
+[INFO] [1742039693.155772503] [pose_subscriber]: Robot Position: x=11, y=18
+[INFO] [1742039695.467682462] [pose_subscriber]: Robot Position: x=12, y=18
+[INFO] [1742039697.799230800] [pose_subscriber]: Robot Position: x=12, y=18
+[INFO] [1742039700.173653998] [pose_subscriber]: Robot Position: x=13, y=18
+[INFO] [1742039702.565828514] [pose_subscriber]: Robot Position: x=13, y=18
+[INFO] [1742039705.467106737] [pose_subscriber]: Robot Position: x=14, y=18
+[INFO] [1742039708.359040928] [pose_subscriber]: Robot Position: x=14, y=18
+Traceback (most recent call last):
+  File "/home/kyler/Documents/multiSLAM/channelUtils/pose_subscriber.py", line 50, in <module>
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kyler/Documents/multiSLAM/channelUtils/pose_subscriber.py", line 55, in <module>
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

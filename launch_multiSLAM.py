@@ -3,14 +3,23 @@ import time
 import os
 import signal
 import argparse
+import random
+import cv2
+import channelUtils.channel_processing as cproc
+from isaacsimUtils.ros_utils import run_ros_command, send_nav_goal
+import threading
+
+"""
+This is the main file for the multi-robot SLAM simulation for CATMiP.
+It launches the Isaac Sim simulation, multi-robot SLAM, and navigation2.
+It also closes the loop between Isaac Sim and CATMiP by:
+- Extracting the channels from the robots and sending them to CATMiP
+- Recieving navigation goals from CATMiP and sending them to the robots
+"""
 
 # Set paths
 HOME = os.path.expanduser("~")
 ISAAC_SIM_PATH = os.path.join(HOME, "isaacsim")
-ISAAC_SIM_SCRIPT = os.path.join(ISAAC_SIM_PATH, "isaac-sim.sh")  # Isaac Sim launcher
-
-# ROS 2 Bridge Library Path
-ROS2_BRIDGE_PATH = os.path.join(ISAAC_SIM_PATH, "exts/omni.isaac.ros2_bridge/humble/lib")
 
 def launch_isaac_sim():
     """Launch Isaac Sim with ROS 2 bridge."""
@@ -31,56 +40,6 @@ def launch_isaac_sim():
             preexec_fn=os.setsid,  # Creates a new process group
           )
 
-def run_ros_command(command, directory, log_file):
-    """Run a ROS 2 command in a separate process"""
-
-    # Check if the directory exists
-    if not os.path.exists(f"{directory}"):
-        os.makedirs(f"{directory}")
-
-    log_file = f"{directory}/{log_file}"
-
-    with open(log_file, "w") as f:
-        return subprocess.Popen(
-            command,
-            shell=True,
-            stdout=f,
-            stderr=f,
-            executable="/bin/bash",
-            preexec_fn=os.setsid,  # Creates a new process group
-        )
-
-def send_nav_goal(robot_id, x, y, theta=0.0):
-    """Send a navigation goal to a specific robot."""
-
-    namespace = f"/{robot_id}"
-    command = f"""
-    ros2 action send_goal {namespace}/navigate_to_pose nav2_msgs/action/NavigateToPose "{{
-      'pose': {{
-        'header': {{
-          'frame_id': 'map',
-          'stamp': {{ 'sec': 0, 'nanosec': 0 }}
-        }},
-        'pose': {{
-          'position': {{ 'x': {x}, 'y': {y}, 'z': 0.0 }},
-          'orientation': {{ 'x': 0.0, 'y': 0.0, 'z': {theta}, 'w': 1.0 }}
-        }}
-      }}
-    }}"
-    """
-
-    log_file = f"logs/{robot_id}/nav_goal.txt"
-
-    with open(log_file, "w") as f:
-        return subprocess.Popen(
-            command,
-            shell=True,
-            stdout=f,
-            stderr=f,
-            executable="/bin/bash",
-            preexec_fn=os.setsid,  # Creates a new process group
-        )
-    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run multi SLAM with optional debug mode.")
     parser.add_argument("--debug", action="store_true", help="Enable debug mode")
@@ -88,64 +47,104 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.debug: print("In Debug mode.")
 
-    # Robot IDs
+    # Robot namespaces
     robot_ids = []
     for i in range(int(args.amount)):
         robot_ids.append(f"robot{i+1}")
 
+    ###--- Generate Target ---###
+
+    # Choose a random target location for the robot
+    ground_truth_occupancy_map = cv2.imread("groundTruth/occupancy_map30x30.png", cv2.IMREAD_GRAYSCALE)
+    height, width = ground_truth_occupancy_map.shape
+
+    while True:
+        x = random.randint(0,width-1) - 4 # Undo the expected offset
+        y = random.randint(0,height-1) - 4
+
+        if ground_truth_occupancy_map[y, x] == 0 and x >= 10 and y >= 10:
+            print(f"Chosen target: ({x}, {y})")
+            target_map = cproc.to_single_pose_map(x, y)
+            cv2.imwrite(f"channels/global/target_map.png", target_map)
+            break
+      
+    
+    ###--- Launch Processes ---###    
+
     try:
-      # Source ROS2
-      subprocess.run("source /opt/ros/humble/setup.bash", shell=True, executable="/bin/bash")
-      subprocess.run("source ~/ros2_ws/install/setup.bash", shell=True, executable="/bin/bash")
+        # Source ROS2
+        subprocess.run("source /opt/ros/humble/setup.bash", shell=True, executable="/bin/bash")
+        subprocess.run("source ~/ros2_ws/install/setup.bash", shell=True, executable="/bin/bash")
 
-      print("Launching Isaac Sim with ROS 2 bridge...")
-      isaac_sim = launch_isaac_sim()
-      time.sleep(15)  # Wait for Isaac Sim to stabilize
+        print("Launching Isaac Sim with ROS 2 bridge...")
+        isaac_sim = launch_isaac_sim()
+        time.sleep(15)  # Wait for Isaac Sim to stabilize
 
-      print("Launching SLAM components ...")
-      slam_processes = []
-      for id in robot_ids:
-          slam_command = f"ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:={id} use_sim_time:=True"
-          slam_process = run_ros_command(slam_command, f"logs/{id}", "slam_log.txt")
-          slam_processes.append(slam_process)
-      time.sleep(5) # Wait for SLAM to stabilize
+        print("Launching SLAM components ...")
+        slam_processes = []
+        for id in robot_ids:
+            slam_command = f"ros2 launch slam_toolbox online_async_multirobot_launch.py namespace:={id} use_sim_time:=True"
+            slam_process = run_ros_command(slam_command, f"logs/{id}", "slam_log.txt")
+            slam_processes.append(slam_process)
+        time.sleep(5) # Wait for SLAM to stabilize
 
-      print("Launching Nav components ...")
-      if args.debug: 
-        nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
-      else:
-        nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py use_rviz:=false"
-      nav_process = run_ros_command(nav_command, "logs", "nav_log.txt")
+        print("Launching Nav components ...")
+        if args.debug: 
+            nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
+        else:
+            nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py use_rviz:=false"
+        nav_process = run_ros_command(nav_command, "logs", "nav_log.txt")
 
-      print("Simulation is fully running! Ready to send navigation goals.")
+        print("Launching Pose Subscribers ...")
+        pose_subscribers = []
+        for id in robot_ids:
+            pose_subscriber_command = f"python3 channelUtils/pose_subscriber.py --namespace {id}"
+            pose_subscriber_process = run_ros_command(pose_subscriber_command, f"logs/{id}", "pose_subscriber.txt")
+            pose_subscribers.append(pose_subscriber_process)
 
-      #map cmd: ros2 run nav2_map_server map_saver_cli -f robot1_map --ros-args -r __ns:=/robot1
+        print("Simulation is fully running! Ready to send navigation goals. CTRL C to close.")
+        print()
 
-      print("Launching Channel Processing ...")
-      channel_processes = []
-      for id in robot_ids:
-          channel_processing_command = f"python3 channelProcessingUtils/pose_subscriber.py --namespace {id}"
-          channel_processing_process = run_ros_command(channel_processing_command, f"logs/{id}", "channel_processing.txt")
-          channel_processes.append(channel_processing_process)
+        # Send navigation goals
+        while True:
+            nav_goals = []
+            completion_events = []
+            for robot_id in robot_ids:
+                print("Input navigation goal for", robot_id)
+                x = float(input("Enter goal X coordinate: "))
+                y = float(input("Enter goal Y coordinate: "))
+                event = threading.Event()
+                nav_goals.append((robot_id, x, y, event))
+                completion_events.append(event)
 
-      # Send navigation goals
-      while True:
-          robot_id = input("Enter robot ID (robot1 or robot2): ").strip()
-          x = float(input("Enter goal X coordinate: "))
-          y = float(input("Enter goal Y coordinate: "))
-          send_nav_goal(robot_id, x, y)
+            for goal in nav_goals:
+                send_nav_goal(goal[0], goal[1], goal[2], event=goal[3])
+                print(f"Sent navigation goal to {goal[0]} at ({goal[1]}, {goal[2]})")
+            
+            # Wait for the goal to complete
+            for event in completion_events:
+                event.wait()
+            print("All robots have reached their goals. Processing channels...")
+            print()
+
+            # Run channel processing
+            channel_processing_command = "python3 channelUtils/channel_processing.py"
+            subprocess.run(channel_processing_command, shell=True, executable="/bin/bash")
 
     except Exception as e:
         print(e)
     finally:
         print("Shutting down processes...")
-        processes = [isaac_sim, nav_process] + slam_processes + channel_processes
+        processes = [isaac_sim, nav_process] + slam_processes + pose_subscribers
         for proc in processes:
             try:
                 os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
             except Exception as ex:
                 print(f"Could not kill process group for pid {proc.pid}: {ex}")
         os.killpg(os.getpgid(isaac_sim.pid), signal.SIGTERM) # Make sure Isaac Sim is killed
+
+        # Shutdown ROS2
+        subprocess.run("ros2 daemon stop", shell=True, executable="/bin/bash")
         print("Processes terminated.")
 
         

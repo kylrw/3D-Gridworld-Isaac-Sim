@@ -8,8 +8,8 @@ Sending goal:
     frame_id: map
   pose:
     position:
-      x: 9.0
-      y: 0.0
+      x: 15.0
+      y: 17.0
       z: 0.0
     orientation:
       x: 0.0
@@ -18,9 +18,9 @@ Sending goal:
       w: 1.0
 behavior_tree: ''
 
-Goal accepted with ID: 0ab2023845e54935a1d4c7e9da9f907f
+Goal accepted with ID: 9ec3156f63b14bdb8fb5caa1b9ab8fcb
 
 Result:
     result: {}
 
-Goal finished with status: ABORTED
+Goal finished with status: SUCCEEDED

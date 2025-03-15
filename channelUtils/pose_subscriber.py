@@ -15,18 +15,6 @@ class PoseSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
 
-        # Check if the logs directory exists
-        if not os.path.exists("logs"):
-            os.makedirs("logs")
-
-        # Check if the robot's directory exists
-        if not os.path.exists(f"logs/{namespace}"):
-            os.makedirs(f"logs/{namespace}")
-
-        # Clear the namespace_pose.txt file
-        with open(f"logs/{namespace}/pose.txt", "w") as f:
-            f.write("")
-
     def pose_callback(self, msg) -> None:
         x = round(msg.pose.pose.position.x)
         y = round(msg.pose.pose.position.y)
@@ -45,6 +33,19 @@ if __name__ == '__main__':
     rclpy.init(args=None)
 
     node = PoseSubscriber(args.namespace)
+
+    # Check if the logs directory exists
+    if not os.path.exists("logs"):
+        os.makedirs("logs")
+
+    # Check if the robot's directory exists
+    if not os.path.exists(f"logs/{args.namespace}"):
+        os.makedirs(f"logs/{args.namespace}")
+
+    # Clear the namespace_pose.txt file and add 0,0 as the starting position
+    with open(f"logs/{args.namespace}/pose.txt", "w") as f:
+        f.write("0,0\n")
+
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
