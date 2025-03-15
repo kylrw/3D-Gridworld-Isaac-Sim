@@ -115,6 +115,11 @@ if __name__ == "__main__":
                 y = float(input("Enter goal Y coordinate: "))
                 event = threading.Event()
                 nav_goals.append((robot_id, x, y, event))
+                
+                # Save image of the goal
+                goal_map = cproc.to_single_pose_map(int(x), int(y))
+                cv2.imwrite(f"channels/{robot_id}/goal_map.png", goal_map)
+                
                 completion_events.append(event)
 
             for goal in nav_goals:

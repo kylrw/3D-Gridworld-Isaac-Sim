@@ -1,20 +1,2 @@
+[37;1m2025-03-15 21:02:41.293 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7433: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
 Waiting for an action server to become available...
-Sending goal:
-     pose:
-  header:
-    stamp:
-      sec: 0
-      nanosec: 0
-    frame_id: map
-  pose:
-    position:
-      x: 15.0
-      y: 17.0
-      z: 0.0
-    orientation:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      w: 1.0
-behavior_tree: ''
-

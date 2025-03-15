@@ -1,20 +1,9 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-15-20-52-10-186302-kyler-Vector-16-HX-A13VHG-20992
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-15-21-02-28-534512-kyler-Vector-16-HX-A13VHG-29120
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [21022]
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.282665545] [robot2.slam_toolbox]: Node using stack size 40000000
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.364532829] [robot2.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.369453127] [robot2.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot3]
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [29143]
+[multirobot_slam_toolbox_node-1] [INFO] [1742040148.960421328] [robot2.slam_toolbox]: Node using stack size 40000000
+[multirobot_slam_toolbox_node-1] [INFO] [1742040149.018636361] [robot2.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[multirobot_slam_toolbox_node-1] [INFO] [1742040149.018789570] [robot2.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot1]
-[multirobot_slam_toolbox_node-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
-[multirobot_slam_toolbox_node-1] W0315 20:53:10.412428 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:53:21.143262 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:53:38.741076 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:00.259766 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:10.340282 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:12.579823 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:29.233295 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:41.556715 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:55.483373 21022 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] [INFO] [1742039699.469253981] [robot2.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 152.933 for reason 'discarding message because the queue is full'
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot3]

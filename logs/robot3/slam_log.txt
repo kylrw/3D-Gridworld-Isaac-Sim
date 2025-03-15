@@ -1,19 +1,8 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-15-20-52-10-163529-kyler-Vector-16-HX-A13VHG-20993
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-15-21-02-28-517202-kyler-Vector-16-HX-A13VHG-29121
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [21000]
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.258539323] [robot3.slam_toolbox]: Node using stack size 40000000
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.330953944] [robot3.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[multirobot_slam_toolbox_node-1] [INFO] [1742039530.331198853] [robot3.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [29122]
+[multirobot_slam_toolbox_node-1] [INFO] [1742040148.953338328] [robot3.slam_toolbox]: Node using stack size 40000000
+[multirobot_slam_toolbox_node-1] [INFO] [1742040149.021569726] [robot3.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[multirobot_slam_toolbox_node-1] [INFO] [1742040149.021766188] [robot3.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot1]
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot2]
-[multirobot_slam_toolbox_node-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
-[multirobot_slam_toolbox_node-1] W0315 20:53:11.455806 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:53:26.078591 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:53:39.981112 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:00.231792 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:10.322599 21050 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:12.553894 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:29.231492 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:41.557327 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
-[multirobot_slam_toolbox_node-1] W0315 20:54:55.494988 21000 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 32.  Bounding to maximum number available.
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
