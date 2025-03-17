@@ -252,7 +252,7 @@ if __name__ == "__main__":
             print(f"{namespace} is at the target.")
 
         print("Processed maps for", namespace)
-        print()
+    print()
 
 
     #Global maps
