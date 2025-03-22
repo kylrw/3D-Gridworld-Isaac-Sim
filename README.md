@@ -17,8 +17,7 @@ Prerequisites
 
 # Demo
 
-file:///home/kyler/Videos/Screencasts/multiSLAM_and_NAV2_3robots.webm
-
+https://github.com/user-attachments/assets/a4128e38-7b80-432c-b148-ce62e9bd51d1
 
 # Project File Structure
 
