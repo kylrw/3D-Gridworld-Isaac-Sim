@@ -1,16 +1,3 @@
-[INFO] [1742040162.303731954] [pose_subscriber]: Robot Position: x=0, y=0
-[INFO] [1742040162.804087692] [pose_subscriber]: Robot Position: x=0, y=0
-[INFO] [1742040165.569947431] [pose_subscriber]: Robot Position: x=0, y=-1
-[INFO] [1742040167.113437469] [pose_subscriber]: Robot Position: x=1, y=-1
-[INFO] [1742040167.999757778] [pose_subscriber]: Robot Position: x=1, y=-1
-[INFO] [1742040170.814901445] [pose_subscriber]: Robot Position: x=1, y=-1
-[INFO] [1742040173.736418560] [pose_subscriber]: Robot Position: x=2, y=-1
-[INFO] [1742040176.512917654] [pose_subscriber]: Robot Position: x=2, y=-1
-[INFO] [1742040179.537503477] [pose_subscriber]: Robot Position: x=3, y=-1
-[INFO] [1742040180.785935694] [pose_subscriber]: Robot Position: x=3, y=-1
-[INFO] [1742040183.277737968] [pose_subscriber]: Robot Position: x=3, y=-1
-[INFO] [1742040185.763452310] [pose_subscriber]: Robot Position: x=4, y=0
-[INFO] [1742040188.114374717] [pose_subscriber]: Robot Position: x=4, y=0
 Traceback (most recent call last):
   File "/home/kyler/Documents/multiSLAM/channelUtils/pose_subscriber.py", line 50, in <module>
     rclpy.spin(node)

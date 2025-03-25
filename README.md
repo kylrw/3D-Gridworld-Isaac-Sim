@@ -52,7 +52,6 @@ multiSLAM/
     └── robot3/                  # Robot 3 specific logs
 ```
 
-
 # Setup
 
 1. Follow these instructions to download and install [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html) 
@@ -76,12 +75,10 @@ colcon build --symlink-install
 
 2. Ensure [Isaac Sim 4.5.0](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/download.html) is installed at ~/isaacsim
 
-
 3. Clone this repository to your workspace
 ```
 git clone git@github.com:kylrw/3D-Gridworld-Isaac-Sim.git
 ```
-
 
 # Running the Multi-Robot SLAM
 
@@ -104,7 +101,6 @@ Command-line options:
 3. Once running you'll be prompted to enter navigation goals for each robot
 4. The system processes channel data for the CATMiP algorithm once robots reach their goals
 5. To stop the simulation, press CTRL+C
-
 
 # Channel Description
 
