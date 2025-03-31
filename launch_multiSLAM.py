@@ -4,7 +4,7 @@ import os
 import signal
 import argparse
 import random
-import cv2
+# import cv2
 import channelUtils.channel_processing as cproc
 from isaacsimUtils.ros_utils import run_ros_command, send_nav_goal
 import threading
@@ -55,18 +55,18 @@ if __name__ == "__main__":
     ###--- Generate Target ---###
 
     # Choose a random target location for the robot
-    ground_truth_occupancy_map = cv2.imread("groundTruth/occupancy_map30x30.png", cv2.IMREAD_GRAYSCALE)
-    height, width = ground_truth_occupancy_map.shape
+    # ground_truth_occupancy_map = cv2.imread("groundTruth/occupancy_map30x30.png", cv2.IMREAD_GRAYSCALE)
+    # height, width = ground_truth_occupancy_map.shape
 
-    while True:
-        x = random.randint(0,width-1) - 4 # Undo the expected offset
-        y = random.randint(0,height-1) - 4
+    # while True:
+    #     x = random.randint(0,width-1) - 4 # Undo the expected offset
+    #     y = random.randint(0,height-1) - 4
 
-        if ground_truth_occupancy_map[y, x] == 0 and x >= 10 and y >= 10:
-            print(f"Chosen target: ({x}, {y})")
-            target_map = cproc.to_single_pose_map(x, y)
-            cv2.imwrite(f"channels/global/target_map.png", target_map)
-            break
+    #     if ground_truth_occupancy_map[y, x] == 0 and x >= 10 and y >= 10:
+    #         print(f"Chosen target: ({x}, {y})")
+    #         target_map = cproc.to_single_pose_map(x, y)
+    #         cv2.imwrite(f"channels/global/target_map.png", target_map)
+    #         break
       
     
     ###--- Launch Processes ---###    
@@ -89,11 +89,11 @@ if __name__ == "__main__":
         time.sleep(5) # Wait for SLAM to stabilize
 
         print("Launching Nav components ...")
-        if args.debug: 
-            nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
-        else:
-            nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py use_rviz:=false"
-        nav_process = run_ros_command(nav_command, "logs", "nav_log.txt")
+        # if args.debug: 
+        #     nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py"
+        # else:
+        #     nav_command = "ros2 launch turtle_navigation multiple_robot_turtle_navigation.launch.py use_rviz:=false"
+        # nav_process = run_ros_command(nav_command, "logs", "nav_log.txt")
 
         print("Launching Pose Subscribers ...")
         pose_subscribers = []
@@ -118,7 +118,7 @@ if __name__ == "__main__":
                 
                 # Save image of the goal
                 goal_map = cproc.to_single_pose_map(int(x), int(y))
-                cv2.imwrite(f"channels/{robot_id}/goal_map.png", goal_map)
+                # cv2.imwrite(f"channels/{robot_id}/goal_map.png", goal_map)
                 
                 completion_events.append(event)
 
@@ -140,7 +140,7 @@ if __name__ == "__main__":
         print(e)
     finally:
         print("Shutting down processes...")
-        processes = [isaac_sim, nav_process] + slam_processes + pose_subscribers
+        processes = [isaac_sim] + slam_processes + pose_subscribers # + [nav_process]
         for proc in processes:
             try:
                 os.killpg(os.getpgid(proc.pid), signal.SIGTERM)

@@ -1,16 +1,16 @@
-[INFO] [1742039603.200495907] [robot1.map_saver]: 
+[INFO] [1743409016.299402462] [robot1.map_saver]: 
 	map_saver lifecycle node launched. 
 	Waiting on external lifecycle transitions to activate
 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[INFO] [1742039603.200639404] [robot1.map_saver]: Creating
-[INFO] [1742039603.200723631] [robot1.map_saver]: Configuring
-[INFO] [1742039603.201956495] [robot1.map_saver]: Saving map from 'map' topic to 'maps/robot1/map' file
-[WARN] [1742039603.201994939] [robot1.map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
-[WARN] [1742039603.202007270] [robot1.map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
-[WARN] [1742039604.218841581] [map_io]: Image format unspecified. Setting it to: pgm
-[INFO] [1742039604.218910024] [map_io]: Received a 43 X 30 map @ 1 m/pix
-[INFO] [1742039604.247791178] [map_io]: Writing map occupancy data to maps/robot1/map.pgm
-[INFO] [1742039604.248057269] [map_io]: Writing map metadata to maps/robot1/map.yaml
-[INFO] [1742039604.248091936] [map_io]: Map saved
-[INFO] [1742039604.248096893] [robot1.map_saver]: Map saved successfully
-[INFO] [1742039604.249457406] [robot1.map_saver]: Destroying
+[INFO] [1743409016.299488168] [robot1.map_saver]: Creating
+[INFO] [1743409016.299535721] [robot1.map_saver]: Configuring
+[INFO] [1743409016.300145126] [robot1.map_saver]: Saving map from 'map' topic to 'maps/robot1/map' file
+[WARN] [1743409016.300165086] [robot1.map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+[WARN] [1743409016.300170343] [robot1.map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1743409018.299206406] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1743409018.299258245] [map_io]: Received a 28 X 28 map @ 1 m/pix
+[INFO] [1743409018.307271165] [map_io]: Writing map occupancy data to maps/robot1/map.pgm
+[INFO] [1743409018.307582089] [map_io]: Writing map metadata to maps/robot1/map.yaml
+[INFO] [1743409018.307640431] [map_io]: Map saved
+[INFO] [1743409018.307649611] [robot1.map_saver]: Map saved successfully
+[INFO] [1743409018.312857677] [robot1.map_saver]: Destroying

@@ -1,8 +1,13 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-25-19-00-59-348113-kyler-Vector-16-HX-A13VHG-63904
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-31-17-12-39-448900-kyler-Vector-16-HX-A13VHG-10315
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [63926]
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.454986706] [robot2.slam_toolbox]: Node using stack size 40000000
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.566539789] [robot2.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.566917642] [robot2.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [10415]
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.636099621] [robot2.slam_toolbox]: Node using stack size 40000000
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.695549288] [robot2.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.695736570] [robot2.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot1]
+[multirobot_slam_toolbox_node-1] [INFO] [1743408760.734359529] [robot2.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 2.633 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[multirobot_slam_toolbox_node-1] [INFO] [1743408760.734448419] [robot2.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 2.667 for reason 'discarding message because the queue is full'
+[multirobot_slam_toolbox_node-1] [INFO] [1743408760.734489483] [robot2.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 2.733 for reason 'discarding message because the queue is full'
+[multirobot_slam_toolbox_node-1] [INFO] [1743408760.734522253] [robot2.slam_toolbox]: Message Filter dropping message: frame 'base_scan' at time 2.767 for reason 'discarding message because the queue is full'
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
+[multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot3]

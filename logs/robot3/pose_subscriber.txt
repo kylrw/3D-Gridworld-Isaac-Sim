@@ -1,3 +1,31 @@
+[INFO] [1743408809.072379602] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1743408809.376404409] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1743408809.883312828] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1743408810.396237548] [pose_subscriber]: Robot Position: x=0, y=0
+[INFO] [1743408813.587590710] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1743408816.775927833] [pose_subscriber]: Robot Position: x=0, y=1
+[INFO] [1743408819.864461824] [pose_subscriber]: Robot Position: x=0, y=2
+[INFO] [1743408824.904262371] [pose_subscriber]: Robot Position: x=0, y=2
+[INFO] [1743408827.918212598] [pose_subscriber]: Robot Position: x=0, y=3
+[INFO] [1743408830.742967742] [pose_subscriber]: Robot Position: x=1, y=3
+[INFO] [1743408838.818485072] [pose_subscriber]: Robot Position: x=1, y=3
+[INFO] [1743408841.581951067] [pose_subscriber]: Robot Position: x=1, y=4
+[INFO] [1743408844.254994485] [pose_subscriber]: Robot Position: x=2, y=4
+[INFO] [1743408846.919075361] [pose_subscriber]: Robot Position: x=2, y=4
+[INFO] [1743408849.746885861] [pose_subscriber]: Robot Position: x=2, y=5
+[INFO] [1743408852.483083473] [pose_subscriber]: Robot Position: x=2, y=5
+[INFO] [1743408855.243773766] [pose_subscriber]: Robot Position: x=2, y=6
+[INFO] [1743408857.837870672] [pose_subscriber]: Robot Position: x=2, y=7
+[INFO] [1743408859.488678405] [pose_subscriber]: Robot Position: x=2, y=7
+[INFO] [1743408861.963447017] [pose_subscriber]: Robot Position: x=2, y=7
+[INFO] [1743408864.400407434] [pose_subscriber]: Robot Position: x=2, y=8
+[INFO] [1743408866.763477445] [pose_subscriber]: Robot Position: x=2, y=8
+[INFO] [1743408869.245916999] [pose_subscriber]: Robot Position: x=2, y=9
+[INFO] [1743408871.648429969] [pose_subscriber]: Robot Position: x=3, y=9
+[INFO] [1743408874.112088958] [pose_subscriber]: Robot Position: x=3, y=9
+[INFO] [1743408876.488343744] [pose_subscriber]: Robot Position: x=4, y=10
+[INFO] [1743408878.888161492] [pose_subscriber]: Robot Position: x=4, y=10
+[INFO] [1743408881.202146330] [pose_subscriber]: Robot Position: x=4, y=10
 Traceback (most recent call last):
   File "/home/kyler/Documents/multiSLAM/channelUtils/pose_subscriber.py", line 50, in <module>
     rclpy.spin(node)

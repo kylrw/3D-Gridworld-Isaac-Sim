@@ -1,3 +1,28 @@
+[INFO] [1743408798.783046122] [pose_subscriber]: Robot Position: x=1, y=0
+[INFO] [1743408801.998258553] [pose_subscriber]: Robot Position: x=1, y=0
+[INFO] [1743408805.342866964] [pose_subscriber]: Robot Position: x=2, y=0
+[INFO] [1743408808.624875086] [pose_subscriber]: Robot Position: x=2, y=0
+[INFO] [1743408810.723962664] [pose_subscriber]: Robot Position: x=2, y=0
+[INFO] [1743408813.882546478] [pose_subscriber]: Robot Position: x=3, y=0
+[INFO] [1743408817.043784504] [pose_subscriber]: Robot Position: x=3, y=0
+[INFO] [1743408820.135761966] [pose_subscriber]: Robot Position: x=4, y=0
+[INFO] [1743408823.313281849] [pose_subscriber]: Robot Position: x=4, y=0
+[INFO] [1743408826.276604781] [pose_subscriber]: Robot Position: x=5, y=0
+[INFO] [1743408829.222237187] [pose_subscriber]: Robot Position: x=5, y=0
+[INFO] [1743408832.082691865] [pose_subscriber]: Robot Position: x=6, y=0
+[INFO] [1743408834.975325435] [pose_subscriber]: Robot Position: x=6, y=0
+[INFO] [1743408837.788252015] [pose_subscriber]: Robot Position: x=7, y=0
+[INFO] [1743408840.584058925] [pose_subscriber]: Robot Position: x=7, y=0
+[INFO] [1743408843.293241733] [pose_subscriber]: Robot Position: x=8, y=0
+[INFO] [1743408845.933944213] [pose_subscriber]: Robot Position: x=8, y=0
+[INFO] [1743408848.700630886] [pose_subscriber]: Robot Position: x=9, y=0
+[INFO] [1743408851.401967896] [pose_subscriber]: Robot Position: x=9, y=0
+[INFO] [1743408854.101865708] [pose_subscriber]: Robot Position: x=10, y=0
+[INFO] [1743408856.700999698] [pose_subscriber]: Robot Position: x=10, y=0
+[INFO] [1743408859.254261957] [pose_subscriber]: Robot Position: x=11, y=0
+[INFO] [1743408861.814043423] [pose_subscriber]: Robot Position: x=11, y=0
+[INFO] [1743408864.222694828] [pose_subscriber]: Robot Position: x=12, y=0
+[INFO] [1743408866.559095619] [pose_subscriber]: Robot Position: x=12, y=0
 Traceback (most recent call last):
   File "/home/kyler/Documents/multiSLAM/channelUtils/pose_subscriber.py", line 50, in <module>
     rclpy.spin(node)

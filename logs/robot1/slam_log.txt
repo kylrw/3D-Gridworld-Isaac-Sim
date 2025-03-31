@@ -1,9 +1,9 @@
-[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-25-19-00-59-343642-kyler-Vector-16-HX-A13VHG-63903
+[INFO] [launch]: All log files can be found below /home/kyler/.ros/log/2025-03-31-17-12-39-395521-kyler-Vector-16-HX-A13VHG-10314
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [63942]
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.457097558] [robot1.slam_toolbox]: Node using stack size 40000000
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.529441222] [robot1.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[multirobot_slam_toolbox_node-1] [INFO] [1742896859.532246232] [robot1.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[INFO] [multirobot_slam_toolbox_node-1]: process started with pid [10319]
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.479252151] [robot1.slam_toolbox]: Node using stack size 40000000
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.539117478] [robot1.slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[multirobot_slam_toolbox_node-1] [INFO] [1743408759.539328222] [robot1.slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : base_scan]
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot2]
 [multirobot_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar : robot3]

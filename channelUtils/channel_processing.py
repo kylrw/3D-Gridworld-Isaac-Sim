@@ -28,25 +28,35 @@ def resize_image(img: np.ndarray, size: int) -> np.ndarray:
 
     cropped = img[top_left[0]:bottom_right[0] + 1, top_left[1]:bottom_right[1] + 1]
 
-    # If the map is smaller than the desired size, add padding (unexplored cells)
-    if cropped.shape[0] < size or cropped.shape[1] < size:
-        print(f"Warning: Map size ({cropped.shape}) is smaller than the desired size ({size}). Padding...")
-        padded = np.full((size, size), unknown_val, dtype=np.uint8)
-        if cropped.shape[0] < size:
-            top_pad = (size - cropped.shape[0]) // 2
-            bottom_pad = size - cropped.shape[0] - top_pad
-            cropped = np.pad(cropped, ((top_pad, bottom_pad), (0, 0)), mode='constant', constant_values=unknown_val)
-        if cropped.shape[1] < size:
-            left_pad = (size - cropped.shape[1]) // 2
-            right_pad = size - cropped.shape[1] - left_pad
-            cropped = np.pad(cropped, ((0, 0), (left_pad, right_pad)), mode='constant', constant_values=unknown_val)
+    # # If the map is smaller than the desired size, add padding (unexplored cells)
+    # if cropped.shape[0] < size or cropped.shape[1] < size:
+    #     print(f"Warning: Map size ({cropped.shape}) is smaller than the desired size ({size}). Padding...")
+    #     padded = np.full((size, size), unknown_val, dtype=np.uint8)
+    #     if cropped.shape[0] < size:
+    #         top_pad = (size - cropped.shape[0]) // 2
+    #         bottom_pad = size - cropped.shape[0] - top_pad
+    #         cropped = np.pad(cropped, ((top_pad, bottom_pad), (0, 0)), mode='constant', constant_values=unknown_val)
+    #     if cropped.shape[1] < size:
+    #         left_pad = (size - cropped.shape[1]) // 2
+    #         right_pad = size - cropped.shape[1] - left_pad
+    #         cropped = np.pad(cropped, ((0, 0), (left_pad, right_pad)), mode='constant', constant_values=unknown_val)
 
-    # If the map is larger, throw a warning and crop it
-    if cropped.shape[0] > size or cropped.shape[1] > size:
-        #print(f"Warning: Map size ({cropped.shape}) is larger than the desired size ({size}). Cropping...")
+    # # If the map is larger, throw a warning and crop it
+    # if cropped.shape[0] > size or cropped.shape[1] > size:
+    #     #print(f"Warning: Map size ({cropped.shape}) is larger than the desired size ({size}). Cropping...")
+    #     cropped = cropped[:size, :size]
+    
+    h, w = cropped.shape
+    if h > size or w > size:
+        print(f"Warning: Cropped map size ({h}, {w}) is larger than desired size ({size}). Cropping...")
         cropped = cropped[:size, :size]
+        h, w = cropped.shape
 
-    return cropped
+    # Create empty grey canvas and place cropped image in top-left
+    padded = np.full((size, size), unknown_val, dtype=np.uint8)
+    padded[:h, :w] = cropped
+
+    return padded
     
 def to_occupancy_map(img: np.ndarray, size: int = 30) -> np.ndarray:
     """

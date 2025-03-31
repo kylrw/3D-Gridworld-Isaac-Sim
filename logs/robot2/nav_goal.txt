@@ -1,3 +1,2 @@
-[37;1m2025-03-15 21:02:41.293 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7433: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
 Waiting for an action server to become available...
 Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:428
